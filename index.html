@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Noto Sans TC', sans-serif;
+            height: 1000vh;
+            color: rgb(255, 255, 255);
+        }
+
+
+
+        .home-page {
+            width: auto;
+            display: flex;
+            position: relative;
+
+
+        }
+
+        .home-page .big-imge {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .on-imge {
+
+            border: aqua 1px solid;
+            left: 400px;
+            position: absolute;
+
+
+        }
+
+        .on-imge .bird {
+            width: 500px;
+
+
+        }
+
+        .on-imge .dragon {
+            width: 500px;
+
+        }
+
+        @media (min-width: 1200px) {
+            .navbar-expand-sm .navbar-nav {
+
+                font-size: 0.9rem;
+                letter-spacing: 0.2em;
+
+                position: relative;
+                padding: auto;
+
+
+            }
+
+            #navbarSupportedContent {
+                position: absolute;
+                right: 30px;
+                padding-top: 8px;
+
+
+            }
+
+            .navbar {
+                transition: .5s;
+
+            }
+
+            .hide_nav {
+                transform: translateY(-100px);
+            }
+
+            .navbar img {
+                width: 50px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+
+
+
+
+        @media (max-width: 575.98px) {
+            .navbar-expand-sm .navbar-nav {
+                padding: 208px 35px;
+                background-color: #000000;
+                border: none;
+                font-size: 18px;
+                text-align: right;
+                font-family: "Karla", sans-serif;
+                letter-spacing: 5px;
+            }
+
+            .navbar-toggler {
+
+
+                padding: 10px 10px;
+                font-size: 1.5rem;
+                line-height: 0;
+
+                border: 0px;
+                border-radius: 0.2rem;
+                /* margin-right: 25px; */
+
+            }
+
+
+
+            .navbar-expand-sm {
+                border: none;
+                border-radius: 0;
+                padding: .5rem .75rem;
+            }
+
+            .navbar-brand img {
+                width: 60px;
+
+                padding-left: 14px;
+                padding-top: 5px;
+            }
+
+
+            .navbar {
+                transition: .5s;
+
+            }
+
+            .hide_nav {
+                transform: translateY(-100px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-expand-sm  navbar-dark fixed-top" style="color: #ffffff;">
+        <div class="navbar-brand" href="#"><img src="./XD/logo.png" alt=""></div>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-linksm" style="color: #ffffff;" href="#">
+                        三峽祖師廟
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #ffffff;" href="#">藝術文化</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #ffffff;" href="#">設計發想</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #ffffff;" href="#">作品圖</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #ffffff;" href="#">聯絡我們</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="home-page ">
+        <img class="big-imge" src="./XD/index-big-img.png"></img>
+        <div class="on-imge">
+            <img class="dragon" src="./XD/1x/dragon.png"></img>
+            <img class="bird" src="./XD/bird-tern.png"></img>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        let scrollLast = 0;
+
+        $(window).scroll(function () {
+            console.log('scoll top', $(this).scrollTop());
+            let scrollNow = $(this).scrollTop();
+
+            //等300以下才開始用跑elseㄝ
+            if (scrollNow <= 300) {
+                $('.navbar').removeClass('hide_nav');
+            }
+            else {
+                if (scrollLast < scrollNow) {
+                    // 往下
+                    console.log('往下');
+                    $('.navbar').addClass('hide_nav');
+                }
+                else {
+                    // 往上
+                    console.log('往上');
+                    $('.navbar').removeClass('hide_nav');
+                }
+            }
+
+
+
+            scrollLast = scrollNow;
+
+        })
+    </script>
+
+</body>
+
+</html>
