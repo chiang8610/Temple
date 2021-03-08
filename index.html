@@ -14,47 +14,39 @@
     <style>
         body {
             background-color: black;
+            width: 100%;
             font-family: 'Noto Sans TC', sans-serif;
-            height: 1000vh;
             color: rgb(255, 255, 255);
         }
 
 
 
-        .home-page {
-            width: auto;
-            display: flex;
-            position: relative;
 
-
-        }
-
-        .home-page .big-imge {
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .on-imge {
-
-            border: aqua 1px solid;
-            left: 400px;
-            position: absolute;
-
-
-        }
-
-        .on-imge .bird {
-            width: 500px;
-
-
-        }
-
-        .on-imge .dragon {
-            width: 500px;
-
-        }
 
         @media (min-width: 1200px) {
+            .f1 {
+                font-size: 95px;
+                letter-spacing: 17px;
+            }
+
+            .f2 {
+                font-size: 80pt;
+                letter-spacing: 100pt;
+            }
+
+            .f4 {
+                font-size: 30px;
+                letter-spacing: 5px;
+            }
+
+            p {
+                font-size: 20pt;
+                letter-spacing: 100pt;
+                line-height: 40pt;
+
+            }
+
+            /* 選單列 */
             .navbar-expand-sm .navbar-nav {
 
                 font-size: 0.9rem;
@@ -64,6 +56,10 @@
                 padding: auto;
 
 
+            }
+
+            .navbar-brand {
+                padding-left: 40px;
             }
 
             #navbarSupportedContent {
@@ -88,6 +84,85 @@
                 margin: 0;
                 padding: 0;
             }
+
+            /* 首頁圖 */
+
+            .home-page {
+                width: 100%;
+                height: 1100px;
+
+                overflow: hidden;
+                position: relative;
+            }
+
+            .big-imge {
+                width: 100%;
+                position: absolute;
+
+            }
+
+            .dragon {
+                position: absolute;
+                width: 450px;
+                left: 350px;
+                bottom: 100px;
+            }
+
+            .bird {
+                width: 450px;
+                position: absolute;
+                left: 1090px;
+                bottom: 50px;
+            }
+
+            .home-page-mb {
+                display: none
+            }
+
+            /* no.1 */
+            .about-font {
+                padding-top: 100px;
+                position: relative;
+                padding-bottom: 60px;
+            }
+
+            .about-en {
+
+                position: absolute;
+                top: 70px;
+            }
+
+            .about-ch {
+
+                top: -100px;
+
+            }
+
+            .about-introduction {
+                width: 100%;
+                border: solid 2px red;
+                position: relative;
+                height: 606.19px;
+
+
+            }
+
+            .introduction-img {
+                width: 1000px;
+                float: right;
+                right: 0;
+
+            }
+
+            .introduction-img img {
+                width: 100%;
+
+            }
+
+            .introduction-img-font {
+                top: 500px;
+
+            }
         }
 
 
@@ -95,14 +170,16 @@
 
 
         @media (max-width: 575.98px) {
+
             .navbar-expand-sm .navbar-nav {
                 padding: 208px 35px;
-                background-color: #000000;
+                background-color: #000000c4;
                 border: none;
                 font-size: 18px;
                 text-align: right;
                 font-family: "Karla", sans-serif;
                 letter-spacing: 5px;
+
             }
 
             .navbar-toggler {
@@ -142,6 +219,50 @@
             .hide_nav {
                 transform: translateY(-100px);
             }
+
+            .home-page {
+                display: none
+            }
+
+            .home-page-mb {
+
+                height: 812px;
+                width: 375px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .home-page-mb .big-imge {
+                height: 100%;
+                position: absolute;
+                object-fit: cover;
+                width: 100%;
+
+            }
+
+            .home-page-mb .dragon {
+                position: absolute;
+                width: 250px;
+                left: -50px;
+                top: 250px;
+            }
+
+            .home-page-mb .bird {
+                width: 250px;
+                position: absolute;
+                left: 140px;
+                top: 70px;
+                overflow: hidden;
+
+            }
+
+            .home-page-mb .logo-mb {
+                position: absolute;
+                width: 150px;
+                left: 110px;
+                top: 300px;
+            }
+
         }
     </style>
 </head>
@@ -178,11 +299,39 @@
 
         </div>
     </nav>
+
     <div class="home-page ">
         <img class="big-imge" src="./XD/index-big-img.png"></img>
-        <div class="on-imge">
-            <img class="dragon" src="./XD/1x/dragon.png"></img>
-            <img class="bird" src="./XD/bird-tern.png"></img>
+        <img class="dragon" src="./XD/1x/dragon.png"></img>
+        <img class="bird" src="./XD/bird-tern.png"></img>
+    </div>
+
+    <div class="home-page-mb ">
+        <img class="big-imge" src="./XD/index-big-mb-img.png"></img>
+        <img class="logo-mb" src="./XD/logo.png"></img>
+        <img class="dragon" src="./XD/1x/dragon.png"></img>
+        <img class="bird" src="./XD/bird-tern.png"></img>
+    </div>
+
+    <div class="about-box">
+        <div class="container">
+            <div class="row">
+                <div class="about-font col-12">
+                    <div class="about-en f4">Contents NO.01</div>
+                    <div class="about-ch f1">祖師廟介紹</div>
+                </div>
+            </div>
+        </div>
+        <div class="about-introduction">
+            <div class="introduction-img">
+                <img src="./XD/about-top.png">
+            </div>
+            <div class="introduction-img-font">
+                <div class="introduction-big">本廟介紹</div>
+                <div class="introduction-sm">
+                    供奉的祖師乃源於福建省泉州府安溪鎮清水巖的清水祖師，清水祖師法號普足，北宋年代在安溪清水巖修道，以道行精嚴聞名閩南，是三峽三角湧，樹林石頭溪，鶯歌二甲九，大溪中庄，鶯歌石，地方七股〈劉姓、大集姓、陳姓、林姓、中庄集姓、李姓、王姓〉的信仰中心。
+                </div>
+            </div>
         </div>
     </div>
 
