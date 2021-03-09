@@ -11,12 +11,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&family=Shippori+Mincho+B1:wght@800&display=swap"
+        rel="stylesheet">
     <style>
         body {
             background-color: black;
             width: 100%;
             font-family: 'Noto Sans TC', sans-serif;
             color: rgb(255, 255, 255);
+        }
+
+        * {
+            outline: 3px red solid;
         }
 
 
@@ -27,11 +36,17 @@
             .f1 {
                 font-size: 95px;
                 letter-spacing: 17px;
+                line-height: 100px;
             }
 
             .f2 {
-                font-size: 80pt;
-                letter-spacing: 100pt;
+                font-size: 75px;
+                letter-spacing: 15px;
+            }
+
+            .f3 {
+                font-size: 40px;
+                letter-spacing: 8px;
             }
 
             .f4 {
@@ -40,9 +55,9 @@
             }
 
             p {
-                font-size: 20pt;
-                letter-spacing: 100pt;
-                line-height: 40pt;
+                font-size: 14pt;
+                letter-spacing: 5pt;
+                line-height: 30px;
 
             }
 
@@ -138,31 +153,173 @@
 
             }
 
+            /* 本廟介紹 */
             .about-introduction {
-                width: 100%;
-                border: solid 2px red;
+                padding-bottom: 250px;
                 position: relative;
-                height: 606.19px;
 
 
             }
 
+            .introduction-img-box {
+                position: relative;
+
+            }
+
             .introduction-img {
-                width: 1000px;
-                float: right;
-                right: 0;
+                width: 75%;
+                margin-right: 0;
+                margin-left: auto;
 
             }
 
             .introduction-img img {
                 width: 100%;
+                height: auto;
 
             }
 
             .introduction-img-font {
-                top: 500px;
+                position: absolute;
+                left: 15%;
+                bottom: 10%;
+                width: 53%;
+
 
             }
+
+            /* 本廟歷史 */
+            .about-history {
+                padding-bottom: 250px;
+                position: relative;
+
+
+            }
+
+            .history-img-box {
+                position: relative;
+
+            }
+
+            .history-img {
+                width: 75%;
+
+                margin-left: 0;
+
+            }
+
+            .history-img img {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .history-img-font {
+                position: absolute;
+                left: 40%;
+                bottom: 10%;
+                width: 53%;
+
+
+            }
+
+            /* NO.2 */
+            .art-font {
+
+                position: relative;
+                padding-bottom: 60px;
+            }
+
+            .art-en {
+
+                position: absolute;
+                top: -35px;
+            }
+
+            /* 跑得字 */
+            .font-Carousel-text {
+                height: 200px;
+
+                overflow: hidden;
+            }
+
+            .font-Carousel {
+
+                font-family: 'Shippori Mincho B1', serif;
+                font-size: 120px;
+
+                white-space: nowrap
+            }
+
+            /* 石雕 */
+            .about-stone {
+                padding-bottom: 250px;
+                position: relative;
+            }
+
+            .stone-img-box {
+                position: relative;
+            }
+
+            .stone-img {
+                width: 75%;
+                margin-right: 0;
+                margin-left: auto;
+
+            }
+
+            .stone-img img {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .stone-img-font {
+                position: absolute;
+                left: 20%;
+                bottom: 10%;
+                width: 53%;
+            }
+
+            /* 木雕 */
+            .about-wood {
+                padding-bottom: 250px;
+                position: relative;
+            }
+
+            .wood-img-box {
+                position: relative;
+            }
+
+            .wood-img {
+                width: 75%;
+            }
+
+            .wood-img img {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .wood-img-font {
+                position: absolute;
+                left: 40%;
+                bottom: 8%;
+                width: 53%;
+            }
+
+            /* NO.3 */
+            .idea-font {
+                position: relative;
+                padding-bottom: 60px;
+            }
+
+            .idea-en {
+                position: absolute;
+                top: -35px;
+            }
+
+
         }
 
 
@@ -170,7 +327,35 @@
 
 
         @media (max-width: 575.98px) {
+            .f1 {
+                font-size: 45px;
+                letter-spacing: 3px;
+                line-height: 55px;
+            }
 
+            .f2 {
+                font-size: 30px;
+                letter-spacing: 8px;
+            }
+
+            .f3 {
+                font-size: 25px;
+                letter-spacing: 5px;
+            }
+
+            .f4 {
+                font-size: 20px;
+                letter-spacing: 4px;
+            }
+
+            p {
+                font-size: 11pt;
+                letter-spacing: 2pt;
+                line-height: 23px;
+
+            }
+
+            /* 選單列 */
             .navbar-expand-sm .navbar-nav {
                 padding: 208px 35px;
                 background-color: #000000c4;
@@ -195,12 +380,11 @@
 
             }
 
-
-
             .navbar-expand-sm {
                 border: none;
                 border-radius: 0;
                 padding: .5rem .75rem;
+                background-color: #000000c7;
             }
 
             .navbar-brand img {
@@ -209,7 +393,6 @@
                 padding-left: 14px;
                 padding-top: 5px;
             }
-
 
             .navbar {
                 transition: .5s;
@@ -220,6 +403,7 @@
                 transform: translateY(-100px);
             }
 
+            /* 首頁 */
             .home-page {
                 display: none
             }
@@ -261,6 +445,196 @@
                 width: 150px;
                 left: 110px;
                 top: 300px;
+            }
+
+            /* no.1 */
+            .about-font {
+                padding-top: 80px;
+                position: relative;
+                padding-bottom: 60px;
+            }
+
+            .about-en {
+
+                position: absolute;
+                top: 60px;
+            }
+
+            /* 本廟介紹 */
+            .about-introduction {
+                padding-bottom: 250px;
+                position: relative;
+
+
+            }
+
+            .introduction-img-box {
+                position: relative;
+
+            }
+
+            .introduction-img {
+                width: 85%;
+                margin-right: 0;
+                margin-left: auto;
+
+            }
+
+            .introduction-img img {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .introduction-img-font {
+                position: absolute;
+                left: 10%;
+                bottom: 7%;
+                width: 80%;
+
+
+            }
+
+            /* 本廟歷史 */
+            .about-history {
+                padding-bottom: 250px;
+                position: relative;
+
+
+            }
+
+            .history-img-box {
+                position: relative;
+
+            }
+
+            .history-img {
+                width: 85%;
+                margin-left: 0;
+
+            }
+
+            .history-img img {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .history-img-font {
+                position: absolute;
+                left: 15%;
+                bottom: 16%;
+                width: 80%;
+
+
+            }
+
+            /* NO.2 */
+            .art-font {
+                padding-bottom: 60PX;
+                position: relative;
+            }
+
+            .art-en {
+
+                position: absolute;
+                top: -20px;
+            }
+
+            /* 跑字 */
+            .font-Carousel-text {
+                height: 150px;
+                width: 100%;
+                overflow: hidden;
+
+            }
+
+            .font-Carousel {
+
+                font-family: 'Shippori Mincho B1', serif;
+                font-size: 100px;
+                white-space: nowrap
+            }
+
+            /* 石雕 */
+            .about-stone {
+                padding-bottom: 250px;
+                position: relative;
+
+
+            }
+
+            .stone-img-box {
+                position: relative;
+
+            }
+
+            .stone-img {
+                width: 85%;
+                margin-right: 0;
+                margin-left: auto;
+
+            }
+
+            .stone-img img {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .stone-img-font {
+                position: absolute;
+                left: 10%;
+                bottom: 18%;
+                width: 80%;
+
+
+            }
+
+            /* 木雕 */
+            .about-wood {
+                padding-bottom: 300px;
+                position: relative;
+
+
+            }
+
+            .wood-img-box {
+                position: relative;
+
+            }
+
+            .wood-img {
+                width: 85%;
+                margin-left: 0;
+
+            }
+
+            .wood-img img {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .wood-img-font {
+                position: absolute;
+                left: 15%;
+                bottom: 12%;
+                width: 80%;
+
+
+            }
+
+            /* NO.2 */
+            .idea-font {
+                padding-bottom: 60PX;
+                position: relative;
+            }
+
+            .idea-en {
+
+                position: absolute;
+                top: -20px;
             }
 
         }
@@ -322,19 +696,102 @@
                 </div>
             </div>
         </div>
+
         <div class="about-introduction">
-            <div class="introduction-img">
-                <img src="./XD/about-top.png">
+            <div class="introduction-img-box">
+                <div class="introduction-img">
+                    <img src="./XD/about-top.png">
+                </div>
             </div>
             <div class="introduction-img-font">
-                <div class="introduction-big">本廟介紹</div>
-                <div class="introduction-sm">
+                <div class="introduction-big f2">本廟介紹</div>
+                <p class="introduction-sm ">
                     供奉的祖師乃源於福建省泉州府安溪鎮清水巖的清水祖師，清水祖師法號普足，北宋年代在安溪清水巖修道，以道行精嚴聞名閩南，是三峽三角湧，樹林石頭溪，鶯歌二甲九，大溪中庄，鶯歌石，地方七股〈劉姓、大集姓、陳姓、林姓、中庄集姓、李姓、王姓〉的信仰中心。
+                </p>
+            </div>
+        </div>
+
+
+        <div class="about-history">
+            <div class="history-img-box">
+                <div class="history-img">
+                    <img src="./XD/history.png">
                 </div>
+            </div>
+            <div class="history-img-font">
+                <div class="history-big f2">本廟歷史</div>
+                <p class="history-sm ">
+                    西元1767年.三峽三角湧.樹林石頭溪.鶯歌二甲九.大溪中庄.鶯歌石地方鄉民分七股以劉姓.大集姓.陳姓.林姓.中庄集姓.李姓.王姓.建造祖師廟.恭奉安溪清水巖迎來的清水祖師公.1899年第二次重建.1947年第三次重建。
+                </p>
             </div>
         </div>
     </div>
 
+    <div class="art-box">
+        <div class="container">
+            <div class="row">
+                <div class="art-font col-12">
+                    <div class="art-en f4">Contents NO.02</div>
+                    <div class="art-ch f1">祖師廟藝術文化</div>
+                    <div class="art-ch f3">1947年第三次重建，由畫家李梅樹教授督造</div>
+                    <p class="art-ch">
+                        廟建築型式採三進九開間殿堂式，全石作壁面，樑枋浮雕，五門皆為銅門，前殿正門並列哼哈二將，兩邊為四金剛，石柱無論圓雕，浮雕，透雕，皆精緻生動，無不巧妙，栩栩如生，木雕，精細繁複，每件雕刻都引經據典，氣韻生動，銅雕，充滿歷史典故，神態威武。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="font-Carousel-text">
+            <div class="font-Carousel">SAN SHIA ZU SHI TEMPLE SAN SHIA ZU SHI TEMPLE</div>
+        </div>
+    </div>
+
+    <div class="about-stone">
+        <div class="stone-img-box">
+            <div class="stone-img">
+                <img src="./XD/stone.png">
+            </div>
+        </div>
+        <div class="stone-img-font">
+            <div class="stone-big f2">石雕</div>
+            <p class="stone-sm ">
+                無論圓雕、浮雕或透雕，皆精緻生動，美妙絕倫，例如鎮守正門氣勢非凡的石獅、黃鶴樓周瑜設詭計、華容道關公放曹操、金雁橋孔明捉張任、飛龍案包公審狄青、鴻門宴等石窗人物之雕刻，均可看出師傅非凡的手藝。
+            </p>
+        </div>
+    </div>
+
+    <div class="about-wood">
+        <div class="wood-img-box">
+            <div class="wood-img">
+                <img src="./XD/wood.png">
+            </div>
+        </div>
+        <div class="wood-img-font">
+            <div class="wood-big f2">木雕</div>
+            <p class="wood-sm ">
+                木材選用檜木和樟木，為防蟲蛀，上貼金箔，無論花鳥、人物、飛禽、走獸都出自名家手筆，如拱角飛鳳，氣韻生動，為林松師傅的遺作，又每幅雕品均係一塊木材刻成，諸如前殿內拱的獅子，胸前的垂鍊和鍊子中央的鈴鐺，與獅子腳踏的球，球內吊一小球，全是一木雕成，由此可見木雕手藝之精巧與細穎。
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <div class="idea-box">
+        <div class="container">
+            <div class="row">
+                <div class="idea-font col-12">
+                    <div class="idea-en f4">Contents NO.03</div>
+                    <div class="idea-ch f1">設計發想</div>
+                    <p class="idea-ch">
+                        全廟以上木下石的雕刻建造,主要分為天花板的木雕、柱體的石雕以及牆面上的銅雕三大類,我們從這三類的雕刻分別挑選出象徵吉祥的獅子、龍以及鳳凰作為主要形象視覺,以雕刻圖騰作為輔助圖形,並將此視覺延伸至各項應用物。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="CH-animal"></div>
+
+
+
+
+    </div>
 
 
 
