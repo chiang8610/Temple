@@ -171,3 +171,57 @@ $(window).scroll(function () {
     scrollLast = scrollNow;
 
 })
+
+// dm點下去出現
+
+$('.Direct-Mail-dragon-box').click(function () {
+
+    $('.Direct-Mail-dragon-box').css('visibility', 'hidden')
+    $('.Direct-Mail-big-yellow').css('visibility', 'visible')
+
+
+})
+
+$('.Direct-Mail-big-yellow').click(function () {
+
+    $('.Direct-Mail-dragon-box').css('visibility', 'visible')
+    $('.Direct-Mail-big-yellow').css('visibility', 'hidden')
+
+
+
+})
+
+$('.Direct-Mail-lion-box').click(function () {
+
+    $('.Direct-Mail-lion-box').css('visibility', 'hidden')
+    $('.Direct-Mail-big-red').css('visibility', 'visible')
+
+
+})
+
+$('.Direct-Mail-big-red').click(function () {
+
+    $('.Direct-Mail-lion-box').css('visibility', 'visible')
+    $('.Direct-Mail-big-red').css('visibility', 'hidden')
+
+
+
+})
+
+
+$('.Direct-Mail-bird-box').click(function () {
+
+    $('.Direct-Mail-bird-box').css('visibility', 'hidden')
+    $('.Direct-Mail-big-blue').css('visibility', 'visible')
+
+
+})
+
+$('.Direct-Mail-big-blue').click(function () {
+
+    $('.Direct-Mail-bird-box').css('visibility', 'visible')
+    $('.Direct-Mail-big-blue').css('visibility', 'hidden')
+
+
+
+})

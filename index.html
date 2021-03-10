@@ -602,21 +602,131 @@
 
             /* 3d檔案圖 */
             .material-3d-fount {
+                padding-top: 10px;
                 padding-left: 300px;
                 width: 100%;
                 height: auto;
             }
 
-            .material-3d {
+            .modelo-wrapper-md {
+                display: none
+            }
+
+            /* dm折起 */
+            .Direct-Mail {
+                width: 100%;
+                height: auto;
+                padding-bottom: 300px;
+                position: relative;
+                padding-top: 50px;
+
+            }
+
+            .Direct-Mail-dragon-box-img {
+                position: relative;
+            }
+
+            .Direct-Mail-dragon-box {
+                width: 300px;
+                position: absolute;
+                left: 15%;
+            }
+
+            .Direct-Mail-dragon-box img {
                 width: 100%;
 
             }
 
-            .material-3d img {
-                width: 100%;
-                height: 1000px;
+            .Direct-Mail-lion-box-img {
+                position: relative;
             }
 
+            .Direct-Mail-lion-box {
+                width: 300px;
+                position: absolute;
+                left: 43%;
+
+            }
+
+            .Direct-Mail-lion-box img {
+                width: 100%;
+
+            }
+
+            .Direct-Mail-bird-box-img {
+                position: relative;
+            }
+
+            .Direct-Mail-bird-box {
+                width: 300px;
+                position: absolute;
+                right: 15%;
+
+            }
+
+            .Direct-Mail-bird-box img {
+                width: 100%;
+            }
+
+            .Direct-Mail-fount {
+                padding-top: 10px;
+                padding-left: 300px;
+                padding-bottom: 50PX;
+                width: 100%;
+                height: auto;
+            }
+
+            /* 整張dm */
+            .Direct-Mail-big {
+                position: relative;
+                width: 100%;
+                height: auto;
+
+            }
+
+            .Direct-Mail-big img {
+                width: 100%;
+                margin-left: 50px;
+
+            }
+
+            .Direct-Mail-big-yellow {
+                position: absolute;
+                width: 550px;
+                left: 20%;
+                top: -380px;
+                display: flex;
+                visibility: hidden;
+            }
+
+
+            .Direct-Mail-big-red {
+                position: absolute;
+                width: 550px;
+                left: 20%;
+                top: -380px;
+                display: flex;
+                visibility: hidden;
+            }
+
+
+            .Direct-Mail-big-blue {
+                position: absolute;
+                width: 550px;
+                left: 20%;
+                top: -380px;
+                display: flex;
+                visibility: hidden;
+            }
+
+            /* dm關閉 */
+            .back-box {
+                position: absolute;
+                right: 0;
+                margin-right: 300px;
+                top: -400px;
+                visibility: hidden;
+            }
         }
 
 
@@ -1163,19 +1273,88 @@
             }
 
             /* 3d圖 */
-            .material-3d-fount {
-                padding-bottom: 20px;
-            }
-
             .material-3d {
+                display: none
+            }
+
+            /* dm 對折的*/
+            .Direct-Mail-fount {
+                margin-left: 10px;
+                padding-bottom: 10px;
+            }
+
+            .Direct-Mail-dragon-box-img {
+                width: 180px;
+                padding-bottom: 50px;
+                margin: 0 auto;
+            }
+
+            .Direct-Mail-lion-box-img {
+                width: 180px;
+                padding-bottom: 50px;
+                margin: 0 auto;
+            }
+
+            .Direct-Mail-bird-box-img {
+                width: 180px;
+                padding-bottom: 50px;
+                margin: 0 auto;
+            }
+
+            .Direct-Mail img {
                 width: 100%;
+
 
             }
 
-            .material-3d img {
+            /* dm 展開 */
+            .Direct-Mail-big {
+                position: relative;
                 width: 100%;
-                height: 100%;
+                height: auto;
             }
+
+            .Direct-Mail-big-yellow {
+                display: flex;
+                width: 180px;
+                position: absolute;
+                left: 10px;
+                top: -1130px;
+                visibility: hidden;
+
+            }
+
+            .Direct-Mail-big img {
+                width: 100%;
+                margin-left: 5px;
+
+            }
+
+            .Direct-Mail-big-red {
+                display: flex;
+                width: 180px;
+                position: absolute;
+                left: 10px;
+                top: -740px;
+                visibility: hidden;
+
+
+            }
+
+            .Direct-Mail-big-blue {
+                display: flex;
+                width: 180px;
+                position: absolute;
+                left: 10px;
+                top: -340px;
+                visibility: hidden;
+
+            }
+
+            .back-box {
+                display: none;
+            }
+
         }
     </style>
 </head>
@@ -1434,10 +1613,67 @@
         <!-- 3d圖 -->
         <div class="material-3d">
             <div class="material-3d-fount f2">材質3D圖</div>
-            <div class="material-3d"><img src="./XD/dragon-3d.png"></div>
+            <div class="material-3d">
+                <!-- <div class='modelo-wrapper-pc'>
+                    <div class='modelo-wrapper'>
+                        <div style="width: 80%; padding-bottom: 56.25%;margin: 0 auto;position: relative">
+                            <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe
+                                    src="https://app.modeloapp.com/embedded/3w7meidfye?viewport=false&autoplay=true&autoRotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false"
+                                    style="width:100%;height:80%;border: 1px solid rgb(97, 97, 97); " frameborder="0"
+                                    mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe> </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- dm -->
+        <div class="Direct-Mail-BOX">
+            <div class="Direct-Mail-fount f2">DM設計</div>
+
+            <div class="Direct-Mail">
+                <div class="Direct-Mail-dragon-box-img">
+                    <div class="Direct-Mail-dragon-box">
+                        <img src="./XD/Direct-Mail-yellow.png">
+                    </div>
+                </div>
+                <div class="Direct-Mail-lion-box-img">
+                    <div class="Direct-Mail-lion-box">
+                        <img src="./XD/Direct-Mail-red.png">
+                    </div>
+                </div>
+                <div class="Direct-Mail-bird-box-img">
+                    <div class="Direct-Mail-bird-box">
+                        <img src="./XD/Direct-Mail-blue.png">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="Direct-Mail-big">
+                <div class="Direct-Mail-big-yellow">
+                    <img src="./XD/1x/dm-big-yellow-first.png">
+                    <img src="./XD/1x/dm-big-yellow-back.png">
+                </div>
+                <div class="Direct-Mail-big-red">
+                    <img src="./XD/1x/dm-big-red-first.png">
+                    <img src="./XD/1x/dm-big-red-back.png">
+                </div>
+                <div class="Direct-Mail-big-blue">
+                    <img src="./XD/1x/dm-big-blue-first.png">
+                    <img src="./XD/1x/dm-big-blue-back.png">
+                </div>
+                <div class="back-box">
+                    <H3 class="back-fount">X</H3>
+                </div>
+            </div>
         </div>
     </div>
     </div>
+
+
+
+
 
 
 

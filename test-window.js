@@ -175,3 +175,100 @@ $(window).scroll(function () {
     scrollLast = scrollNow;
 
 })
+
+
+// dm
+
+$('.Direct-Mail-dragon-box').mouseenter(function () {
+
+    $(this).css('width', '320px')
+
+})
+$('.Direct-Mail-dragon-box').mouseleave(function () {
+
+    $(this).css('width', '300px')
+
+})
+
+
+
+
+$('.Direct-Mail-lion-box').mouseenter(function () {
+
+    $(this).css('width', '320px')
+
+})
+$('.Direct-Mail-lion-box').mouseleave(function () {
+
+    $(this).css('width', '300px')
+
+})
+
+
+
+$('.Direct-Mail-bird-box').mouseenter(function () {
+
+    $(this).css('width', '320px')
+
+})
+$('.Direct-Mail-bird-box').mouseleave(function () {
+
+    $(this).css('width', '300px')
+
+})
+
+
+
+
+
+
+$('.Direct-Mail-dragon-box').click(function () {
+
+    $('.Direct-Mail').css('visibility', 'hidden')
+    $('.Direct-Mail-big-yellow').css('visibility', 'visible')
+    $('.back-box').css('visibility', 'visible')
+
+})
+
+$('.back-fount').click(function () {
+
+    $('.Direct-Mail').css('visibility', 'visible')
+    $('.Direct-Mail-big-yellow').css('visibility', 'hidden')
+    $('.back-box').css('visibility', 'hidden')
+
+})
+
+$('.Direct-Mail-lion-box').click(function () {
+
+    $('.Direct-Mail').css('visibility', 'hidden')
+    $('.Direct-Mail-big-red').css('visibility', 'visible')
+    $('.back-box').css('visibility', 'visible')
+
+})
+
+$('.back-fount').click(function () {
+
+    $('.Direct-Mail').css('visibility', 'visible')
+    $('.Direct-Mail-big-red').css('visibility', 'hidden')
+    $('.back-box').css('visibility', 'hidden')
+
+})
+
+$('.Direct-Mail-bird-box').click(function () {
+
+    $('.Direct-Mail').css('visibility', 'hidden')
+    $('.Direct-Mail-big-blue').css('visibility', 'visible')
+    $('.back-box').css('visibility', 'visible')
+
+})
+
+$('.back-fount').click(function () {
+
+    $('.Direct-Mail').css('visibility', 'visible')
+    $('.Direct-Mail-big-blue').css('visibility', 'hidden')
+    $('.back-box').css('visibility', 'hidden')
+
+})
+
+
+
