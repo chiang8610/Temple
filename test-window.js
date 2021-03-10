@@ -177,7 +177,7 @@ $(window).scroll(function () {
 })
 
 
-// dm
+// dm華過去變大
 
 $('.Direct-Mail-dragon-box').mouseenter(function () {
 
@@ -191,8 +191,6 @@ $('.Direct-Mail-dragon-box').mouseleave(function () {
 })
 
 
-
-
 $('.Direct-Mail-lion-box').mouseenter(function () {
 
     $(this).css('width', '320px')
@@ -203,7 +201,6 @@ $('.Direct-Mail-lion-box').mouseleave(function () {
     $(this).css('width', '300px')
 
 })
-
 
 
 $('.Direct-Mail-bird-box').mouseenter(function () {
@@ -220,7 +217,7 @@ $('.Direct-Mail-bird-box').mouseleave(function () {
 
 
 
-
+// dm點下去出現
 
 $('.Direct-Mail-dragon-box').click(function () {
 
