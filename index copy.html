@@ -24,9 +24,9 @@
             color: rgb(255, 255, 255);
         }
 
-        /* * {
+        * {
             outline: 3px red solid;
-        } */
+        }
 
 
 
@@ -812,7 +812,6 @@
                 width: 85%;
                 margin-left: 0;
                 overflow: hidden;
-
             }
 
             .history-img img {
@@ -845,17 +844,15 @@
             /* 跑字 */
             .font-Carousel-text {
                 height: 150px;
-                margin-bottom: 30px;
+                width: 100%;
                 overflow: hidden;
-                position: relative;
 
             }
 
             .font-Carousel {
-                position: absolute;
+
                 font-family: 'Shippori Mincho B1', serif;
                 font-size: 100px;
-                left: -340px;
                 white-space: nowrap
             }
 
@@ -876,13 +873,13 @@
                 width: 85%;
                 margin-right: 0;
                 margin-left: auto;
-                overflow: hidden;
+
             }
 
             .stone-img img {
                 width: 100%;
                 height: auto;
-                transition: .3s;
+
             }
 
             .stone-img-font {
@@ -890,7 +887,7 @@
                 left: 10%;
                 bottom: 18%;
                 width: 80%;
-                transition: .3s;
+
 
             }
 
@@ -910,13 +907,13 @@
             .wood-img {
                 width: 85%;
                 margin-left: 0;
-                overflow: hidden;
+
             }
 
             .wood-img img {
                 width: 100%;
                 height: auto;
-                transition: .3s;
+
             }
 
             .wood-img-font {
@@ -924,7 +921,7 @@
                 left: 15%;
                 bottom: 12%;
                 width: 80%;
-                transition: .3s;
+
 
             }
 
@@ -1055,22 +1052,21 @@
                 width: 85%;
                 margin-right: 0;
                 margin-left: auto;
-                overflow: hidden;
 
             }
 
             .cover-img img {
                 width: 100%;
                 height: auto;
-                transition: .3s;
+
             }
 
             .cover-img-font {
                 position: absolute;
                 left: 10%;
-                bottom: 13%;
+                bottom: 18%;
                 width: 80%;
-                transition: .3s;
+
 
             }
 
@@ -1090,14 +1086,12 @@
             .content-img {
                 width: 85%;
                 margin-left: 0;
-                overflow: hidden;
 
             }
 
             .content-img img {
                 width: 100%;
                 height: auto;
-                transition: .3s;
 
             }
 
@@ -1106,7 +1100,6 @@
                 left: 15%;
                 bottom: 12%;
                 width: 80%;
-                transition: .3s;
 
 
             }
@@ -1142,14 +1135,12 @@
                 width: 85%;
                 margin-right: 0;
                 margin-left: auto;
-                overflow: hidden;
 
             }
 
             .material-img img {
                 width: 100%;
                 height: auto;
-                transition: .3s;
 
             }
 
@@ -1158,7 +1149,7 @@
                 left: 10%;
                 bottom: 10%;
                 width: 80%;
-                transition: .3s;
+
 
             }
 
@@ -1455,8 +1446,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
-
-
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $.getScript("./test-window.js");
 
@@ -1464,6 +1453,8 @@
         } else {
             $.getScript("./test-mobile.js");
         }
+
+
 
     </script>
 
