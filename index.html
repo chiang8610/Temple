@@ -120,14 +120,14 @@
             .dragon {
                 position: absolute;
                 width: 450px;
-                left: 410px;
+                left: 350px;
                 bottom: 100px;
             }
 
             .bird {
                 width: 450px;
                 position: absolute;
-                left: 1200px;
+                left: 1090px;
                 bottom: 50px;
             }
 
@@ -198,6 +198,7 @@
                 position: relative;
 
 
+
             }
 
             .history-img-box {
@@ -231,7 +232,7 @@
 
             /* NO.2 */
             .art-font {
-
+                padding-top: 200px;
                 position: relative;
                 padding-bottom: 60px;
             }
@@ -239,7 +240,7 @@
             .art-en {
 
                 position: absolute;
-                top: -35px;
+                top: 160px;
             }
 
             /* 跑得字 */
@@ -351,11 +352,12 @@
             .idea-font {
                 position: relative;
                 padding-bottom: 60px;
+                padding-top: 200px;
             }
 
             .idea-en {
                 position: absolute;
-                top: -35px;
+                top: 165px;
             }
 
             /* 三芝神獸 */
@@ -682,6 +684,10 @@
                 height: auto;
             }
 
+            .dn-text {
+                padding-top: 10px;
+            }
+
             /* 整張dm */
             .Direct-Mail-big {
                 position: relative;
@@ -759,7 +765,7 @@
                 opacity: 0;
                 position: absolute;
                 z-index: 10;
-                transition: 3s;
+                transition: 1s;
                 border: 1px solid rgb(133, 133, 133);
             }
 
@@ -782,7 +788,7 @@
                 position: absolute;
                 z-index: 10;
                 opacity: 0;
-                transition: 3s;
+                transition: 1s;
                 border: 1px solid rgb(133, 133, 133);
             }
 
@@ -806,7 +812,7 @@
                 opacity: 0;
                 position: absolute;
                 z-index: 10;
-                transition: 3s;
+                transition: 1s;
                 border: 1px solid rgb(133, 133, 133);
 
 
@@ -818,11 +824,15 @@
                 border: 1px solid rgb(133, 133, 133);
             }
 
+            .poster-text {
+                color: rgb(160, 160, 160);
+            }
+
             /* 籤詩 */
             .fortune-sticks {
                 width: 100%;
 
-                padding-bottom: 100px;
+                padding-bottom: 300px;
             }
 
             .card-box {
@@ -871,10 +881,102 @@
                 background-image: url('./XD/1x/card-3.png');
                 background-repeat: no-repeat;
             }
+
+            /* no.5 */
+            .call-me-en {
+                position: absolute;
+                top: -35px;
+            }
+
+            .call-me-font {
+                position: relative;
+                padding-bottom: 100px;
+            }
+
+            /* 聯絡我們 */
+            .call-me-box {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 0 20px 100px 20px;
+            }
+
+            .winner-image-box img {
+                width: 350px;
+                margin-right: 50px;
+            }
+
+
+
+
+
+            .call-me-qrcode-box {
+
+                width: 600px;
+                display: flex;
+                padding-top: 140px;
+                flex-wrap: wrap;
+
+            }
+
+            .icon {
+                margin-left: 30px;
+                padding-bottom: 30px;
+            }
+
+            .ig {
+                width: 150px;
+                height: 300px;
+                margin-right: 30px;
+
+            }
+
+            .fb {
+                width: 150px;
+                height: 300px;
+                margin-right: 30px;
+            }
+
+            .tw {
+                width: 150px;
+                height: 300px;
+                margin-right: 30px;
+            }
+
+            /* 最後 */
+            .footer {
+                width: 100%;
+                height: 200px;
+                background-color: rgba(255, 255, 255, 0.137);
+            }
+
+            .footer-box {
+                margin: 0 200px;
+                display: flex;
+                justify-content: space-between;
+                object-fit: contain;
+                padding-top: 20px;
+            }
+
+            .footer-box img {
+                object-fit: none;
+            }
+
+            .footer-2 {
+                padding-top: 30px;
+            }
+
+            .footer-3 {
+                padding-top: 30px;
+            }
+
+            .footer-text {
+                font-size: 10px;
+                letter-spacing: 2px;
+                padding-left: 820px;
+                padding-top: 15px;
+            }
         }
-
-
-
 
 
         @media (max-width: 575.98px) {
@@ -900,7 +1002,7 @@
             }
 
             p {
-                font-size: 11pt;
+                font-size: 10pt;
                 letter-spacing: 2pt;
                 line-height: 23px;
 
@@ -1096,10 +1198,15 @@
                 top: -20px;
             }
 
+            .art-ch {
+                padding-top: 5px;
+            }
+
             /* 跑字 */
             .font-Carousel-text {
                 height: 150px;
-                margin-bottom: 30px;
+                margin-bottom: 0px;
+                padding-bottom: 250px;
                 overflow: hidden;
                 position: relative;
 
@@ -1192,6 +1299,10 @@
 
                 position: absolute;
                 top: -20px;
+            }
+
+            .idea-ch {
+                padding-top: 5px;
             }
 
             /* 三芝神獸 */
@@ -1611,7 +1722,7 @@
             .cardbox {
                 width: 130px;
                 height: 396px;
-                background-color: tomato;
+
                 border: 1px solid rgb(133, 133, 133);
                 transition: .3s;
                 margin: 0 auto;
@@ -1653,6 +1764,91 @@
                 background-image: url('./XD/1x/card-3.png');
                 background-size: cover;
             }
+
+            /* 聯絡我們 */
+            .call-me-box {
+                width: 100%;
+
+
+                padding: 30px 20px 30px 20px;
+            }
+
+            .winner-image-box img {
+                width: 150px;
+
+
+            }
+
+
+
+            .winner-image-box {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 30px;
+            }
+
+            .call-me-qrcode-box {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .icon {
+                padding-left: 15px;
+                padding-bottom: 20px;
+            }
+
+            .ig-qrcode {
+                width: 100px;
+            }
+
+            .fb-qrcode {
+                width: 100px;
+            }
+
+            .tw-qrcode {
+                width: 100px;
+            }
+
+
+
+
+            /* 最後 */
+
+            .footer {
+                width: 100%;
+                height: 400px;
+                background-color: rgba(255, 255, 255, 0.137);
+
+            }
+
+            .footer-box {
+                padding-left: 80px;
+                padding-top: 20px;
+                width: 100%;
+
+            }
+
+            .footer-box img {
+                object-fit: none;
+            }
+
+            .footer-2 {
+                padding-top: 30px;
+            }
+
+            .footer-3 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .footer-text {
+                font-size: 10px;
+                letter-spacing: 2px;
+                padding-left: 70px;
+                padding-top: 5px;
+
+
+            }
         }
     </style>
 </head>
@@ -1660,7 +1856,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-expand-sm  navbar-dark fixed-top" style="color: #ffffff;">
-        <div class="navbar-brand" href="#"><img src="./XD/logo.png" alt=""></div>
+        <div class="navbar-brand" href="#home"><img src="./XD/logo.png" alt=""></div>
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
@@ -1669,28 +1865,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link nav-linksm" style="color: #ffffff;" href="#">
+                    <a class="nav-link nav-linksm" style="color: #ffffff;" href="#zeor">
                         三峽祖師廟
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #ffffff;" href="#">藝術文化</a>
+                    <a class="nav-link" style="color: #ffffff;" href="#one">藝術文化</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #ffffff;" href="#">設計發想</a>
+                    <a class="nav-link" style="color: #ffffff;" href="#two">設計發想</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #ffffff;" href="#">作品圖</a>
+                    <a class="nav-link" style="color: #ffffff;" href="#three">作品圖</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #ffffff;" href="#">聯絡我們</a>
+                    <a class="nav-link" style="color: #ffffff;" href="#four">聯絡我們</a>
                 </li>
             </ul>
 
         </div>
     </nav>
 
-    <div class="home-page ">
+    <div id="home" class="home-page ">
         <img class="big-imge" src="./XD/index-big-img.png"></img>
         <img class="dragon" src="./XD/1x/dragon.png"></img>
         <img class="bird" src="./XD/bird-tern.png"></img>
@@ -1707,7 +1903,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-font col-12">
-                    <div class="about-en f4">Contents NO.01</div>
+                    <div id="zeor" class="about-en f4">Contents NO.01</div>
                     <div class="about-ch f1">祖師廟介紹</div>
                 </div>
             </div>
@@ -1747,7 +1943,7 @@
         <div class="container">
             <div class="row">
                 <div class="art-font col-12">
-                    <div class="art-en f4">Contents NO.02</div>
+                    <div id="one" class="art-en f4">Contents NO.02</div>
                     <div class="art-ch f1">祖師廟藝術文化</div>
                     <div class="art-ch f3">1947年第三次重建，由畫家李梅樹教授督造</div>
                     <p class="art-ch">
@@ -1794,7 +1990,7 @@
         <div class="container">
             <div class="row">
                 <div class="idea-font col-12">
-                    <div class="idea-en f4">Contents NO.03</div>
+                    <div id="two" class="idea-en f4">Contents NO.03</div>
                     <div class="idea-ch f1">設計發想</div>
                     <p class="idea-ch">
                         全廟以上木下石的雕刻建造,主要分為天花板的木雕、柱體的石雕以及牆面上的銅雕三大類,我們從這三類的雕刻分別挑選出象徵吉祥的獅子、龍以及鳳凰作為主要形象視覺,以雕刻圖騰作為輔助圖形,並將此視覺延伸至各項應用物。
@@ -1859,7 +2055,7 @@
         <div class="container">
             <div class="row">
                 <div class="works-font col-12">
-                    <div class="works-en f4">Contents NO.04</div>
+                    <div id="three" class="works-en f4">Contents NO.04</div>
                     <div class="works-ch f1">設計作品</div>
                 </div>
             </div>
@@ -1933,16 +2129,19 @@
                 <div class="Direct-Mail-dragon-box-img">
                     <div class="Direct-Mail-dragon-box">
                         <img src="./XD/Direct-Mail-yellow.png">
+                        <p class="dn-text">日文</p>
                     </div>
                 </div>
                 <div class="Direct-Mail-lion-box-img">
                     <div class="Direct-Mail-lion-box">
                         <img src="./XD/Direct-Mail-red.png">
+                        <p class="dn-text">中文</p>
                     </div>
                 </div>
                 <div class="Direct-Mail-bird-box-img">
                     <div class="Direct-Mail-bird-box">
                         <img src="./XD/Direct-Mail-blue.png">
+                        <p class="dn-text">英文</p>
                     </div>
 
                 </div>
@@ -1969,27 +2168,34 @@
 
         <!-- 海報 -->
         <div class="poster">
-            <div class="Direct-Mail-fount f2">形象海報設計</div>
+            <div class="Direct-Mail-fount f2">形象海報設計 <p class="poster-text">請點海報</p>
+            </div>
 
             <div class="poster-yellow-box">
-                <img class="poster-yellow-top" src="./XD/poster-yellow-top.png">
+                <img class="poster-yellow-top" src="./XD/1x/poster-dragon.png">
                 <img class="poster-yellow-down" src="./XD/poster-yellow-down.png">
             </div>
             <div class="poster-red-box">
-                <img class="poster-red-top" src="./XD/poster-red-top.png">
+
+
+                <img class="poster-red-top" src="./XD/1x/poster-lion.png">
                 <img class="poster-red-down" src="./XD/poster-red-down.png">
+
             </div>
             <div class="poster-blue-box">
-                <img class="poster-blue-top" src="./XD/poster-blue-top.png">
+                <img class="poster-blue-top" src="./XD/1x/poster-bird.png">
                 <img class="poster-blue-down" src="./XD/poster-blue-down.png">
             </div>
         </div>
 
         <!-- 籤詩 -->
         <div class="fortune-sticks">
-            <div class="Direct-Mail-fount f2">籤詩</div>
+            <div class="Direct-Mail-fount f2">籤詩<p class="poster-text">點選詩籤可翻面</p>
+            </div>
             <div class="card-box">
-                <div class="cardbox box1-1"></div>
+                <div class="cardbox box1-1">
+
+                </div>
                 <div class="cardbox box1-2"></div>
                 <div class="cardbox box2-1"></div>
                 <div class="cardbox box2-2"></div>
@@ -2000,21 +2206,44 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="call-me-font col-12">
+                <div id="four" class="call-me-en f4">Contents NO.05</div>
+                <div class="call-me-ch f1">得獎、聯絡我們</div>
+            </div>
+        </div>
+    </div>
     <div class="call-me-box">
         <div class="winner-image-box">
             <img class="redbot-image" src="./XD/redbot.jpeg">
+            <img class="pin-image" src="./XD/pin.jpg">
         </div>
-        <div class="call-me-qrcode box">
-            <div class="ig">
-
-            </div>
+        <div class="call-me-qrcode-box">
             <div class="fb">
-
+                <a href="https://www.facebook.com/sanshiazushitemple/"><img class="icon fb-icon"
+                        src="./XD/1x/fb.png"></a>
+                <img class="fb-qrcode" src="./XD/1x/fb-qrcode.png">
             </div>
-            <div class="line">
-
+            <div class="ig">
+                <a href="https://instagram.com/san_shia_zu_shi_temple?igshid=1vs4vi0fl52mk"><img class="icon ig-icon"
+                        src="./XD/1x/ig.png"></a>
+                <img class="ig-qrcode" src="./XD/1x/ig-qrcode.png">
+            </div>
+            <div class="tw">
+                <img class="icon tw-icon" src="./XD/1x/tw.png">
+                <img class="tw-qrcode" src="./XD/1x/fb-qrcode.png">
             </div>
         </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-box">
+            <img class="footer-1" src="./XD/1x/footer-1.png">
+            <img class="footer-2" src="./XD/1x/footer-2.png">
+            <img class="footer-3" src="./XD/1x/footer-3.png">
+        </div>
+        <p class="footer-text">© SAN SHIA ZU SHI TEMPLE 所有</p>
     </div>
 
 
