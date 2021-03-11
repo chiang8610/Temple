@@ -24,9 +24,10 @@
             color: rgb(255, 255, 255);
         }
 
-        /* * {
+
+        * {
             outline: 3px red solid;
-        } */
+        }
 
 
 
@@ -630,6 +631,8 @@
                 width: 300px;
                 position: absolute;
                 left: 15%;
+                height: 550px;
+
             }
 
             .Direct-Mail-dragon-box img {
@@ -645,6 +648,7 @@
                 width: 300px;
                 position: absolute;
                 left: 43%;
+                height: 550px;
 
             }
 
@@ -659,6 +663,8 @@
 
             .Direct-Mail-bird-box {
                 width: 300px;
+                height: 550px;
+
                 position: absolute;
                 right: 15%;
 
@@ -681,6 +687,7 @@
                 position: relative;
                 width: 100%;
                 height: auto;
+                padding-bottom: 500px;
 
             }
 
@@ -727,6 +734,137 @@
                 top: -400px;
                 visibility: hidden;
             }
+
+            /* 海報 */
+
+            .poster {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-bottom: 750px;
+            }
+
+            .poster img {
+                width: 100%;
+            }
+
+            .poster-yellow-box {
+                width: 450px;
+                height: auto;
+                position: absolute;
+                left: 200px;
+            }
+
+            .poster-yellow-top {
+                opacity: 0;
+                position: absolute;
+                z-index: 10;
+                transition: 3s;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            .poster-yellow-down {
+                z-index: 1;
+                position: absolute;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+            .poster-red-box {
+                width: 450px;
+                height: auto;
+                position: absolute;
+                left: 730px;
+            }
+
+            .poster-red-top {
+
+                position: absolute;
+                z-index: 10;
+                opacity: 0;
+                transition: 3s;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            .poster-red-down {
+                z-index: 1;
+                position: absolute;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+
+            .poster-blue-box {
+                width: 450px;
+                height: auto;
+                position: absolute;
+                right: 200px;
+
+            }
+
+            .poster-blue-top {
+                opacity: 0;
+                position: absolute;
+                z-index: 10;
+                transition: 3s;
+                border: 1px solid rgb(133, 133, 133);
+
+
+            }
+
+            .poster-blue-down {
+                z-index: 1;
+                position: absolute;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            /* 籤詩 */
+            .fortune-sticks {
+                width: 100%;
+                position: relative;
+                padding-bottom: 700px;
+            }
+
+            .ball {
+                position: absolute;
+                left: 35%;
+                transition: 1s;
+            }
+
+            .fortune-sticks-box {
+                width: 100%;
+                position: absolute;
+                left: 55%;
+                top: 180px;
+
+            }
+
+            .fortune-sticks-box img {
+                position: absolute;
+            }
+
+            .please-click {
+                left: 49%;
+                position: absolute;
+                top: 50%;
+                transition: .3s;
+            }
+
+            .sticks2 {
+                visibility: hidden;
+
+            }
+
+            .sticks1 {
+                visibility: hidden;
+
+            }
+
+            .sticks0 {
+                visibility: hidden;
+
+            }
+
         }
 
 
@@ -1668,6 +1806,45 @@
                 </div>
             </div>
         </div>
+
+        <!-- 海報 -->
+        <div class="poster">
+            <div class="Direct-Mail-fount f2">形象海報設計</div>
+
+            <div class="poster-yellow-box">
+                <img class="poster-yellow-top" src="./XD/poster-yellow-top.png">
+                <img class="poster-yellow-down" src="./XD/poster-yellow-down.png">
+            </div>
+            <div class="poster-red-box">
+                <img class="poster-red-top" src="./XD/poster-red-top.png">
+                <img class="poster-red-down" src="./XD/poster-red-down.png">
+            </div>
+            <div class="poster-blue-box">
+                <img class="poster-blue-top" src="./XD/poster-blue-top.png">
+                <img class="poster-blue-down" src="./XD/poster-blue-down.png">
+            </div>
+        </div>
+
+        <!-- 籤詩 -->
+        <div class="fortune-sticks">
+            <div class="Direct-Mail-fount f2">籤詩</div>
+            <div class="ball">
+                <img src="./XD/ball.png">
+            </div>
+            <div class="fortune-sticks-box">
+                <div class="sticks0">
+                    <img src="./XD/fortune sticks-yellow.png">
+                </div>
+                <div class="sticks1">
+                    <img src="./XD/fortune sticks-red.png">
+                </div>
+                <div class="sticks2">
+                    <img src="./XD/fortune sticks-blue.png">
+                </div>
+            </div>
+            <p class="please-click">請點選</p>
+        </div>
+
     </div>
     </div>
 

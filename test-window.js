@@ -269,3 +269,86 @@ $('.back-fount').click(function () {
 
 
 
+// 海報華過去變大
+
+$('.poster-yellow-box').mouseenter(function () {
+
+    $(this).css('width', '460px')
+
+})
+$('.poster-yellow-box').mouseleave(function () {
+
+    $(this).css('width', '450px')
+
+})
+
+
+$('.poster-red-box').mouseenter(function () {
+
+    $(this).css('width', '460px')
+
+})
+$('.poster-red-box').mouseleave(function () {
+
+    $(this).css('width', '450px')
+
+})
+
+
+$('.poster-blue-box').mouseenter(function () {
+
+    $(this).css('width', '460px')
+
+})
+$('.poster-blue-box').mouseleave(function () {
+
+    $(this).css('width', '450px')
+
+})
+
+
+// 完整海報顯示
+$('.poster-yellow-box').click(function () {
+
+    $('.poster-yellow-top').css('opacity', '1')
+})
+
+$('.poster-red-box').click(function () {
+
+    $('.poster-red-top').css('opacity', '1')
+})
+$('.poster-blue-box').click(function () {
+
+    $('.poster-blue-top').css('opacity', '1')
+})
+
+
+// 詩籤
+
+$('.ball').mouseenter(function () {
+    $('.ball').css('transform', 'scale(1.5)').css('transform', 'rotate(180deg)');
+
+})
+
+$('.ball').mouseleave(function () {
+    $('.ball').css('transform', 'scale(1)').css('transform', 'rotate(0deg)');
+
+})
+
+let sticks0 = ('.sticks0')
+let sticks1 = $('.sticks1')
+let sticks2 = $('.sticks2')
+
+$('.ball').click(function () {
+    $('.ball').css('left', '0').css('transform', 'rotate(180deg)');
+    $('.please-click').css('visibility', 'hidden');
+
+    let naber = ('sticks' + Math.floor(Math.random() * 3))
+
+    console.log(('sticks' + Math.floor(Math.random() * 3)));
+
+    $(sticks0).css('visibility', 'visible')
+})
+
+
+

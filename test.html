@@ -1,0 +1,29 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title></title>
+    <style type="text/css">
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script src="jquery-1.9.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#btn1').click(function () {
+                var num = Math.floor(Math.random() * 8 + 1);
+                $('img').attr('src', 'picture/' + num + '.jpg')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <img src="picture/1.jpg" id="img1" />
+    <input id="btn1" type="button" value="變換" />
+</body>
+
+</html>
