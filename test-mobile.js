@@ -225,3 +225,101 @@ $('.Direct-Mail-big-blue').click(function () {
 
 
 })
+
+// 海報
+
+$('.poster-yellow-box').click(function () {
+
+    $('.poster-yellow-top').css('opacity', '1')
+})
+
+$('.poster-red-box').click(function () {
+
+    $('.poster-red-top').css('opacity', '1')
+})
+$('.poster-blue-box').click(function () {
+
+    $('.poster-blue-top').css('opacity', '1')
+})
+
+
+
+// 籤詩
+let aaa = 0
+$('.box1-1').click(function () {
+    aaa++;
+
+    if ((aaa % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-1.png)");
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-1-1.png)");
+
+
+    }
+})
+
+let bbb = 0
+$('.box1-2').click(function () {
+    bbb++;
+
+    if ((bbb % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-1.png)");
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-1-2.png)");
+
+
+    }
+})
+
+let ccc = 0
+$('.box2-1').click(function () {
+    ccc++;
+
+    if ((ccc % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-2.png)");
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-2-1.png)");
+
+
+    }
+})
+
+let ddd = 0
+$('.box2-2').click(function () {
+    ddd++;
+
+    if ((ddd % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-2.png)");
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-2-2.png)");
+
+
+    }
+})
+
+
+let eee = 0
+$('.box3-1').click(function () {
+    eee++;
+
+    if ((eee % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-3.png)");
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-3-1.png)");
+
+
+    }
+})
+
+let fff = 0
+$('.box3-2').click(function () {
+    fff++;
+
+    if ((fff % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-3.png)");
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-3-2.png)");
+
+
+    }
+})

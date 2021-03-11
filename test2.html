@@ -7,53 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #box {
-            margin: 100px auto;
-            width: 100px;
-            height: 100px;
-            background-color: #00FFFF;
+        .box {
+            width: 145px;
+            height: 420px;
+            background-image: url('./XD/3.png');
+            transition: .5s;
+
+        }
+
+        .box1 {
+            width: 145px;
+            height: 420px;
+            background-image: url('./XD/3.png');
+            transition: .5s;
+
         }
     </style>
 </head>
 
-<body style="height: 2000px;">
-    <div id="box"></div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        window.onload = function () {
-            var box = document.getElementById("box");
-            box.onmousewheel = function (event) {
-                //event.wheelDelta火狐中不支持
-                if (event.wheelDelta > 0) { //向上滚
-                    box.style.height = box.clientHeight - 5 + "px";
-                }
-                else {     //向下滚
-                    box.style.height = box.clientHeight + 5 + "px";
-                }
+    <script>
 
-                return false; //取消默认行为  火狐不能使用
-                // 当也网页界面有滚动条是需要取消浏览器的默认行为
+        let aaa = 0
+        $('.box').click(function () {
+
+            aaa++;
+
+            if ((aaa % 2) == 0) {
+                $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/3.png)");
+            } else {
+                $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/4.png)");
+
+
             }
-        }
-    </script>
-    ————————————————
-    版权声明：本文为CSDN博主「家里有只猪」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-    原文链接：https://blog.csdn.net/qq_44983621/article/details/90581064
+        })
 
+
+
+    </script>
 </body>
+
 
 </html>

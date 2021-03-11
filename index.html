@@ -25,9 +25,9 @@
         }
 
 
-        * {
+        /* * {
             outline: 3px red solid;
-        }
+        } */
 
 
 
@@ -821,50 +821,56 @@
             /* 籤詩 */
             .fortune-sticks {
                 width: 100%;
-                position: relative;
-                padding-bottom: 700px;
+
+                padding-bottom: 100px;
             }
 
-            .ball {
-                position: absolute;
-                left: 35%;
-                transition: 1s;
-            }
-
-            .fortune-sticks-box {
+            .card-box {
                 width: 100%;
-                position: absolute;
-                left: 55%;
-                top: 180px;
-
+                display: flex;
+                justify-content: space-evenly;
+                padding-left: 50px;
+                padding-right: 50px;
             }
 
-            .fortune-sticks-box img {
-                position: absolute;
-            }
+            .cardbox {
+                width: 190px;
+                height: 570px;
 
-            .please-click {
-                left: 49%;
-                position: absolute;
-                top: 50%;
+                border: 1px solid rgb(133, 133, 133);
                 transition: .3s;
             }
 
-            .sticks2 {
-                visibility: hidden;
+            .box1-1 {
+                background-image: url('./XD/1x/card-1.png');
+                background-repeat: no-repeat;
 
             }
 
-            .sticks1 {
-                visibility: hidden;
-
+            .box1-2 {
+                background-image: url('./XD/1x/card-1.png');
+                background-repeat: no-repeat;
             }
 
-            .sticks0 {
-                visibility: hidden;
-
+            .box2-1 {
+                background-image: url('./XD/1x/card-2.png');
+                background-repeat: no-repeat;
             }
 
+            .box2-2 {
+                background-image: url('./XD/1x/card-2.png');
+                background-repeat: no-repeat;
+            }
+
+            .box3-1 {
+                background-image: url('./XD/1x/card-3.png');
+                background-repeat: no-repeat;
+            }
+
+            .box3-2 {
+                background-image: url('./XD/1x/card-3.png');
+                background-repeat: no-repeat;
+            }
         }
 
 
@@ -1230,8 +1236,9 @@
             .color-box {
                 width: 100%;
                 padding-top: 50px;
-                margin: 0 15px;
+                padding-left: 15px;
                 padding-bottom: 50px;
+                padding-right: 15px;
 
             }
 
@@ -1425,6 +1432,7 @@
                 width: 180px;
                 padding-bottom: 50px;
                 margin: 0 auto;
+
             }
 
             .Direct-Mail-lion-box-img {
@@ -1493,6 +1501,158 @@
                 display: none;
             }
 
+            /* 海報 */
+            .poster {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-bottom: 70px;
+            }
+
+            .poster img {
+                width: 100%;
+            }
+
+            .poster-yellow-box {
+                width: 250px;
+                height: auto;
+                position: relative;
+                margin: 0 auto;
+                padding-bottom: 50px;
+                padding-top: 50px;
+            }
+
+            .poster-yellow-top {
+                opacity: 0;
+                position: absolute;
+
+                z-index: 10;
+                transition: 1s;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+
+            .poster-yellow-down {
+                z-index: 1;
+
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+            .poster-red-box {
+                width: 250px;
+                height: auto;
+                padding-bottom: 50px;
+
+                margin: 0 auto;
+                position: relative;
+            }
+
+            .poster-red-top {
+                position: absolute;
+
+                z-index: 10;
+                opacity: 0;
+                transition: 1s;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            .poster-red-down {
+                z-index: 1;
+
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+
+            .poster-blue-box {
+                width: 250px;
+                height: auto;
+                position: relative;
+                margin: 0 auto;
+                padding-bottom: 50px;
+
+
+            }
+
+            .poster-blue-top {
+                opacity: 0;
+                position: absolute;
+                z-index: 10;
+                transition: 1s;
+                border: 1px solid rgb(133, 133, 133);
+
+
+            }
+
+            .poster-blue-down {
+                z-index: 1;
+
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            /* 籤詩 */
+            .fortune-sticks {
+                width: 100%;
+
+                padding-bottom: 100px;
+            }
+
+            .card-box {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+            .cardbox {
+                width: 130px;
+                height: 396px;
+                background-color: tomato;
+                border: 1px solid rgb(133, 133, 133);
+                transition: .3s;
+                margin: 0 auto;
+
+            }
+
+            .box1-1 {
+                background-image: url('./XD/1x/card-1.png');
+                background-size: cover;
+                margin-right: 30px;
+                margin-bottom: 40px;
+
+            }
+
+            .box1-2 {
+                background-image: url('./XD/1x/card-1.png');
+                background-size: cover;
+            }
+
+            .box2-1 {
+                background-image: url('./XD/1x/card-2.png');
+                background-size: cover;
+                margin-right: 30px;
+                margin-bottom: 40px;
+            }
+
+            .box2-2 {
+                background-image: url('./XD/1x/card-2.png');
+                background-size: cover;
+            }
+
+            .box3-1 {
+                background-image: url('./XD/1x/card-3.png');
+                background-size: cover;
+                margin-right: 30px;
+            }
+
+            .box3-2 {
+                background-image: url('./XD/1x/card-3.png');
+                background-size: cover;
+            }
         }
     </style>
 </head>
@@ -1828,26 +1988,34 @@
         <!-- 籤詩 -->
         <div class="fortune-sticks">
             <div class="Direct-Mail-fount f2">籤詩</div>
-            <div class="ball">
-                <img src="./XD/ball.png">
+            <div class="card-box">
+                <div class="cardbox box1-1"></div>
+                <div class="cardbox box1-2"></div>
+                <div class="cardbox box2-1"></div>
+                <div class="cardbox box2-2"></div>
+                <div class="cardbox box3-1"></div>
+                <div class="cardbox box3-2"></div>
             </div>
-            <div class="fortune-sticks-box">
-                <div class="sticks0">
-                    <img src="./XD/fortune sticks-yellow.png">
-                </div>
-                <div class="sticks1">
-                    <img src="./XD/fortune sticks-red.png">
-                </div>
-                <div class="sticks2">
-                    <img src="./XD/fortune sticks-blue.png">
-                </div>
-            </div>
-            <p class="please-click">請點選</p>
+
         </div>
-
-    </div>
     </div>
 
+    <div class="call-me-box">
+        <div class="winner-image-box">
+            <img class="redbot-image" src="./XD/redbot.jpeg">
+        </div>
+        <div class="call-me-qrcode box">
+            <div class="ig">
+
+            </div>
+            <div class="fb">
+
+            </div>
+            <div class="line">
+
+            </div>
+        </div>
+    </div>
 
 
 

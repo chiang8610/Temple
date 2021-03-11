@@ -324,31 +324,80 @@ $('.poster-blue-box').click(function () {
 
 
 // 詩籤
+let aaa = 0
+$('.box1-1').click(function () {
+    aaa++;
 
-$('.ball').mouseenter(function () {
-    $('.ball').css('transform', 'scale(1.5)').css('transform', 'rotate(180deg)');
+    if ((aaa % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-1.png)").css('background-repeat', 'no-repeat');
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-1-1.png)").css('background-repeat', 'no-repeat');
 
+
+    }
 })
 
-$('.ball').mouseleave(function () {
-    $('.ball').css('transform', 'scale(1)').css('transform', 'rotate(0deg)');
+let bbb = 0
+$('.box1-2').click(function () {
+    bbb++;
 
+    if ((bbb % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-1.png)").css('background-repeat', 'no-repeat');
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-1-2.png)").css('background-repeat', 'no-repeat');;
+
+
+    }
 })
 
-let sticks0 = ('.sticks0')
-let sticks1 = $('.sticks1')
-let sticks2 = $('.sticks2')
+let ccc = 0
+$('.box2-1').click(function () {
+    ccc++;
 
-$('.ball').click(function () {
-    $('.ball').css('left', '0').css('transform', 'rotate(180deg)');
-    $('.please-click').css('visibility', 'hidden');
+    if ((ccc % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-2.png)").css('background-repeat', 'no-repeat');
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-2-1.png)").css('background-repeat', 'no-repeat');;
 
-    let naber = ('sticks' + Math.floor(Math.random() * 3))
 
-    console.log(('sticks' + Math.floor(Math.random() * 3)));
+    }
+})
 
-    $(sticks0).css('visibility', 'visible')
+let ddd = 0
+$('.box2-2').click(function () {
+    ddd++;
+
+    if ((ddd % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-2.png)").css('background-repeat', 'no-repeat');
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-2-2.png)").css('background-repeat', 'no-repeat');;
+
+
+    }
 })
 
 
+let eee = 0
+$('.box3-1').click(function () {
+    eee++;
 
+    if ((eee % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-3.png)").css('background-repeat', 'no-repeat');
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-3-1.png)").css('background-repeat', 'no-repeat');;
+
+    }
+})
+
+let fff = 0
+$('.box3-2').click(function () {
+    fff++;
+
+    if ((fff % 2) == 0) {
+        $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/1x/card-3.png)").css('background-repeat', 'no-repeat');
+    } else {
+        $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/1x/card-3-2.png)").css('background-repeat', 'no-repeat');
+
+
+    }
+})
