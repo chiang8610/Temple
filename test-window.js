@@ -174,6 +174,16 @@ $(window).scroll(function () {
     }
     scrollLast = scrollNow;
 
+
+
+    if (7374 <= scrollNow && scrollNow <= 7474) {
+
+        $('.dragon-box').css('width', '110px').css('height', '110px').css('transition', '2s').css('border-radius', '50%').css('top', '1100px').css('opacity', '0').css('left', '250px');
+
+        $('.color-yellow').css('transition', '3s').css('opacity', '1')
+
+    }
+
 })
 
 
@@ -401,3 +411,5 @@ $('.box3-2').click(function () {
 
     }
 })
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        .box {
+            transition: 1s;
+            position: relative;
+
+
+        }
+
+        .box-img {
+            transition: 3s;
+            position: absolute;
+            width: 200px;
+            height: 400px;
+            left: 0;
+            z-index: 1;
+            opacity: 1;
+        }
+
+        .box-cr {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgb(255, 171, 14);
+            opacity: 0;
+            transition: 8s;
+            position: absolute;
+            left: 500px;
+            z-index: 50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img class="box-img" src="./XD/1x/dragon.png">
+        <div class="box-cr"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $('.box').click(function () {
+
+
+            $('.box-img').css('width', '100px').css('height', '100px').css('transition', '2s').css('border-radius', '50%').css('left', '500px').css('opacity', '0.2')
+            $('.box-cr').css('opacity', '1')
+
+
+        })
+
+
+    </script>
+</body>
+
+</html>
