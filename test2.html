@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            height: 1000vh;
+        }
+
         .box {
             width: 145px;
             height: 420px;
@@ -21,6 +25,15 @@
             background-image: url('./XD/3.png');
             transition: .5s;
 
+
+        }
+
+        .adder {
+            position: fixed;
+        }
+
+        .bdder {
+            border: solid 3px red;
         }
     </style>
 </head>
@@ -33,19 +46,59 @@
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
 
-        let aaa = 0
-        $('.box').click(function () {
+        // let aaa = 0
+        // $('.box').click(function () {
 
-            aaa++;
-
-            if ((aaa % 2) == 0) {
-                $(this).css('transform', 'rotateY(0deg)').css("background-image", "url(./XD/3.png)");
-            } else {
-                $(this).css('transform', 'rotateY(180deg)').css("background-image", "url(./XD/4.png)");
+        //     aaa++;
 
 
+
+
+        //     if ((aaa % 2) == 0) {
+        //         console.log('觸發');
+        //         $('.box').addClass('adder')
+        //     }
+
+        // })
+        // $('.box').on(function () {
+        //     if ((aaa % 2) != 0) {
+        //         console.log('觸發');
+        //         $('.box').removeClas("adder");
+        //     }
+
+        // })
+
+
+
+
+        let scrollLast = 0
+        $(window).scroll(function () {
+
+
+
+
+            console.log('scoll top', $(this).scrollTop());
+            let scrollNow = $(this).scrollTop();
+
+
+            if (200 <= scrollNow && scrollNow <= 700) {
+                console.log('觸發');
+                $('.box').addClass('adder')
             }
+            else {
+                $('.box').removeClas("adder");
+            }
+
+
+
+
+
+            scrollLast = scrollNow;
+
+
+
         })
+
 
 
 
