@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> SAN SHIA ZU SHI TEMPLE</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Redressed&family=Shippori+Mincho+B1:wght@800&display=swap"
         rel="stylesheet">
+    <link rel="Shortcut Icon" type="image/x-icon" href="./XD/1x/icon.ico" />
     <style>
         body {
             background-color: black;
@@ -295,7 +296,7 @@
             }
 
             .stone-img {
-                width: 75%;
+                width: 70%;
                 margin-right: 0;
                 margin-left: auto;
                 overflow: hidden;
@@ -380,6 +381,8 @@
                 opacity: 1;
                 height: 768px;
                 top: 0;
+
+                ;
             }
 
             .dragon-box img {
@@ -395,6 +398,9 @@
                 width: 550px;
                 position: absolute;
                 left: 37%;
+                transition: 3s;
+                opacity: 1;
+                height: 768px;
                 top: 100px;
             }
 
@@ -411,6 +417,10 @@
                 width: 400px;
                 position: absolute;
                 right: 10%;
+                transition: 3s;
+                opacity: 1;
+                height: 768px;
+                top: 0;
 
             }
 
@@ -443,11 +453,15 @@
             .color-red {
                 width: 300px;
                 margin: 0px auto;
+                opacity: 0;
+
             }
 
             .color-blue {
                 width: 300px;
                 margin: 0px auto;
+                opacity: 0;
+
 
             }
 
@@ -612,12 +626,28 @@
             .material-3d-fount {
                 padding-top: 10px;
                 padding-left: 300px;
+                padding-bottom: 30px;
                 width: 100%;
                 height: auto;
             }
 
             .modelo-wrapper-md {
                 display: none
+            }
+
+            .material-box {
+                width: 200px;
+                height: 100px;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                left: 44%;
+                top: 30px;
+                z-index: 999;
+
+            }
+
+            .material-3d {
+                position: relative;
             }
 
             /* dm折起 */
@@ -2114,16 +2144,17 @@
         <div class="material-3d">
             <div class="material-3d-fount f2">材質3D圖</div>
             <div class="material-3d">
-                <!-- <div class='modelo-wrapper-pc'>
+                <div class="material-box"></div>
+                <div class='modelo-wrapper-pc'>
                     <div class='modelo-wrapper'>
                         <div style="width: 80%; padding-bottom: 56.25%;margin: 0 auto;position: relative">
                             <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe
-                                    src="https://app.modeloapp.com/embedded/3w7meidfye?viewport=false&autoplay=true&autoRotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false"
+                                    src="https://app.modeloapp.com/embedded/1370802628941373440?viewport=false&autoplay=true&autoRotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&c_at0=79.99995315478289&c_at1=148.49994552538791&c_at2=3.3499497728616863&c_theta=5.630087143782136&c_phi=0.5444329251994324&c_dis=254.68755765073524"
                                     style="width:100%;height:80%;border: 1px solid rgb(97, 97, 97); " frameborder="0"
                                     mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe> </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
 

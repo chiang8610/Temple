@@ -172,18 +172,51 @@ $(window).scroll(function () {
         }
 
     }
-    scrollLast = scrollNow;
 
 
 
-    if (7374 <= scrollNow && scrollNow <= 7474) {
+    // 龍
+    if (7374 <= scrollNow && scrollNow <= 7600) {
+        if (scrollLast < scrollNow) {
+            // 往下
+            // 龍
+            $('.dragon-box').css('width', '110px').css('height', '110px').css('transition', '2s').css('border-radius', '50%').css('top', '1100px').css('opacity', '0').css('left', '250px');
 
-        $('.dragon-box').css('width', '110px').css('height', '110px').css('transition', '2s').css('border-radius', '50%').css('top', '1100px').css('opacity', '0').css('left', '250px');
+            $('.color-yellow').css('transition', '6s').css('opacity', '1')
 
-        $('.color-yellow').css('transition', '3s').css('opacity', '1')
+            // 獅子
+            $('.lion-box').css('width', '110px').css('height', '110px').css('transition', '2s').css('border-radius', '50%').css('top', '1100px').css('opacity', '0').css('left', '900px');
+
+            $('.color-red').css('transition', '6s').css('opacity', '1')
+
+            // 鳥
+            $('.bird-box').css('width', '110px').css('height', '110px').css('transition', '2s').css('border-radius', '50%').css('top', '1100px').css('opacity', '0').css('right', '250px');
+
+            $('.color-blue').css('transition', '6s').css('opacity', '1')
+        }
+        else {
+            // 龍
+            $('.dragon-box').css('width', '400px').css('height', '768px').css('transition', '2s').css('border-radius', '50%').css('top', '0').css('opacity', '1').css('left', '10%');
+
+            $('.color-yellow').css('transition', '3s').css('opacity', '0')
+
+
+            // 獅子
+            $('.lion-box').css('width', '550px').css('height', '768px').css('transition', '2s').css('border-radius', '50%').css('top', '100px').css('opacity', '1').css('left', '37%');
+
+            $('.color-red').css('transition', '3s').css('opacity', '0')
+
+
+            // 鳥
+            $('.bird-box').css('width', '400px').css('height', '768px').css('transition', '2s').css('border-radius', '50%').css('top', '0').css('opacity', '1').css('right', '10%');
+
+            $('.color-blue').css('transition', '3s').css('opacity', '0')
+
+        }
+
 
     }
-
+    scrollLast = scrollNow;
 })
 
 

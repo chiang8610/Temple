@@ -24,9 +24,10 @@
             color: rgb(255, 255, 255);
         }
 
-        * {
+
+        /* * {
             outline: 3px red solid;
-        }
+        } */
 
 
 
@@ -105,9 +106,10 @@
             .home-page {
                 width: 100%;
                 height: 1100px;
-
+                z-index: 999;
                 overflow: hidden;
                 position: relative;
+                transform: 5s;
             }
 
             .big-imge {
@@ -119,15 +121,17 @@
             .dragon {
                 position: absolute;
                 width: 450px;
-                left: 410px;
+                left: 350px;
                 bottom: 100px;
+                opacity: 0;
             }
 
             .bird {
                 width: 450px;
                 position: absolute;
-                left: 1200px;
+                left: 1090px;
                 bottom: 50px;
+                opacity: 0;
             }
 
             .home-page-mb {
@@ -197,6 +201,7 @@
                 position: relative;
 
 
+
             }
 
             .history-img-box {
@@ -230,7 +235,7 @@
 
             /* NO.2 */
             .art-font {
-
+                padding-top: 200px;
                 position: relative;
                 padding-bottom: 60px;
             }
@@ -238,7 +243,7 @@
             .art-en {
 
                 position: absolute;
-                top: -35px;
+                top: 160px;
             }
 
             /* 跑得字 */
@@ -293,7 +298,7 @@
             }
 
             .stone-img {
-                width: 75%;
+                width: 70%;
                 margin-right: 0;
                 margin-left: auto;
                 overflow: hidden;
@@ -350,11 +355,12 @@
             .idea-font {
                 position: relative;
                 padding-bottom: 60px;
+                padding-top: 200px;
             }
 
             .idea-en {
                 position: absolute;
-                top: -35px;
+                top: 165px;
             }
 
             /* 三芝神獸 */
@@ -373,6 +379,12 @@
                 width: 400px;
                 position: absolute;
                 left: 10%;
+                transition: 3s;
+                opacity: 1;
+                height: 768px;
+                top: 0;
+
+                ;
             }
 
             .dragon-box img {
@@ -388,6 +400,9 @@
                 width: 550px;
                 position: absolute;
                 left: 37%;
+                transition: 3s;
+                opacity: 1;
+                height: 768px;
                 top: 100px;
             }
 
@@ -404,6 +419,10 @@
                 width: 400px;
                 position: absolute;
                 right: 10%;
+                transition: 3s;
+                opacity: 1;
+                height: 768px;
+                top: 0;
 
             }
 
@@ -429,17 +448,22 @@
             .color-yellow {
                 width: 300px;
                 margin: 0px auto;
+                opacity: 0;
 
             }
 
             .color-red {
                 width: 300px;
                 margin: 0px auto;
+                opacity: 0;
+
             }
 
             .color-blue {
                 width: 300px;
                 margin: 0px auto;
+                opacity: 0;
+
 
             }
 
@@ -602,25 +626,400 @@
 
             /* 3d檔案圖 */
             .material-3d-fount {
+                padding-top: 10px;
                 padding-left: 300px;
+                padding-bottom: 50px;
                 width: 100%;
                 height: auto;
             }
 
+            .modelo-wrapper-md {
+                display: none
+            }
+
+            .material-box {
+                width: 200px;
+                height: 100px;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                left: 44%;
+                top: 30px;
+                z-index: 999;
+
+            }
+
             .material-3d {
+                position: relative;
+            }
+
+            /* dm折起 */
+            .Direct-Mail {
+                width: 100%;
+                height: auto;
+                padding-bottom: 300px;
+                position: relative;
+                padding-top: 50px;
+
+            }
+
+            .Direct-Mail-dragon-box-img {
+                position: relative;
+            }
+
+            .Direct-Mail-dragon-box {
+                width: 300px;
+                position: absolute;
+                left: 15%;
+                height: 550px;
+
+            }
+
+            .Direct-Mail-dragon-box img {
                 width: 100%;
 
             }
 
-            .material-3d img {
-                width: 100%;
-                height: 1000px;
+            .Direct-Mail-lion-box-img {
+                position: relative;
             }
 
+            .Direct-Mail-lion-box {
+                width: 300px;
+                position: absolute;
+                left: 43%;
+                height: 550px;
+
+            }
+
+            .Direct-Mail-lion-box img {
+                width: 100%;
+
+            }
+
+            .Direct-Mail-bird-box-img {
+                position: relative;
+            }
+
+            .Direct-Mail-bird-box {
+                width: 300px;
+                height: 550px;
+
+                position: absolute;
+                right: 15%;
+
+            }
+
+            .Direct-Mail-bird-box img {
+                width: 100%;
+            }
+
+            .Direct-Mail-fount {
+                padding-top: 10px;
+                padding-left: 300px;
+                padding-bottom: 50PX;
+                width: 100%;
+                height: auto;
+            }
+
+            .dn-text {
+                padding-top: 10px;
+            }
+
+            /* 整張dm */
+            .Direct-Mail-big {
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding-bottom: 500px;
+
+            }
+
+            .Direct-Mail-big img {
+                width: 100%;
+                margin-left: 50px;
+
+            }
+
+            .Direct-Mail-big-yellow {
+                position: absolute;
+                width: 550px;
+                left: 20%;
+                top: -380px;
+                display: flex;
+                visibility: hidden;
+            }
+
+
+            .Direct-Mail-big-red {
+                position: absolute;
+                width: 550px;
+                left: 20%;
+                top: -380px;
+                display: flex;
+                visibility: hidden;
+            }
+
+
+            .Direct-Mail-big-blue {
+                position: absolute;
+                width: 550px;
+                left: 20%;
+                top: -380px;
+                display: flex;
+                visibility: hidden;
+            }
+
+            /* dm關閉 */
+            .back-box {
+                position: absolute;
+                right: 0;
+                margin-right: 300px;
+                top: -400px;
+                visibility: hidden;
+            }
+
+            /* 海報 */
+
+            .poster {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-bottom: 750px;
+            }
+
+            .poster img {
+                width: 100%;
+            }
+
+            .poster-yellow-box {
+                width: 450px;
+                height: auto;
+                position: absolute;
+                left: 200px;
+            }
+
+            .poster-yellow-top {
+                opacity: 0;
+                position: absolute;
+                z-index: 10;
+                transition: 1s;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            .poster-yellow-down {
+                z-index: 1;
+                position: absolute;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+            .poster-red-box {
+                width: 450px;
+                height: auto;
+                position: absolute;
+                left: 730px;
+            }
+
+            .poster-red-top {
+
+                position: absolute;
+                z-index: 10;
+                opacity: 0;
+                transition: 1s;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            .poster-red-down {
+                z-index: 1;
+                position: absolute;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+
+            .poster-blue-box {
+                width: 450px;
+                height: auto;
+                position: absolute;
+                right: 200px;
+
+            }
+
+            .poster-blue-top {
+                opacity: 0;
+                position: absolute;
+                z-index: 10;
+                transition: 1s;
+                border: 1px solid rgb(133, 133, 133);
+
+
+            }
+
+            .poster-blue-down {
+                z-index: 1;
+                position: absolute;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            .poster-text {
+                color: rgb(160, 160, 160);
+            }
+
+            /* 籤詩 */
+            .fortune-sticks {
+                width: 100%;
+
+                padding-bottom: 300px;
+            }
+
+            .card-box {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            .cardbox {
+                width: 190px;
+                height: 570px;
+
+                border: 1px solid rgb(133, 133, 133);
+                transition: .3s;
+            }
+
+            .box1-1 {
+                background-image: url('./XD/1x/card-1.png');
+                background-repeat: no-repeat;
+
+            }
+
+            .box1-2 {
+                background-image: url('./XD/1x/card-1.png');
+                background-repeat: no-repeat;
+            }
+
+            .box2-1 {
+                background-image: url('./XD/1x/card-2.png');
+                background-repeat: no-repeat;
+            }
+
+            .box2-2 {
+                background-image: url('./XD/1x/card-2.png');
+                background-repeat: no-repeat;
+            }
+
+            .box3-1 {
+                background-image: url('./XD/1x/card-3.png');
+                background-repeat: no-repeat;
+            }
+
+            .box3-2 {
+                background-image: url('./XD/1x/card-3.png');
+                background-repeat: no-repeat;
+            }
+
+            /* no.5 */
+            .call-me-en {
+                position: absolute;
+                top: -35px;
+            }
+
+            .call-me-font {
+                position: relative;
+                padding-bottom: 100px;
+            }
+
+            /* 聯絡我們 */
+            .call-me-box {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                padding: 0 20px 100px 20px;
+            }
+
+            .winner-image-box img {
+                width: 350px;
+                margin-right: 50px;
+            }
+
+
+
+
+
+            .call-me-qrcode-box {
+
+                width: 600px;
+                display: flex;
+                padding-top: 140px;
+                flex-wrap: wrap;
+
+            }
+
+            .icon {
+                margin-left: 30px;
+                padding-bottom: 30px;
+            }
+
+            .ig {
+                width: 150px;
+                height: 300px;
+                margin-right: 30px;
+
+            }
+
+            .fb {
+                width: 150px;
+                height: 300px;
+                margin-right: 30px;
+            }
+
+            .tw {
+                width: 150px;
+                height: 300px;
+                margin-right: 30px;
+            }
+
+            /* 最後 */
+            .footer {
+                width: 100%;
+                height: 200px;
+                background-color: rgba(255, 255, 255, 0.137);
+            }
+
+            .footer-box {
+                margin: 0 200px;
+                display: flex;
+                justify-content: space-between;
+                object-fit: contain;
+                padding-top: 20px;
+            }
+
+            .footer-box img {
+                object-fit: none;
+            }
+
+            .footer-2 {
+                padding-top: 30px;
+            }
+
+            .footer-3 {
+                padding-top: 30px;
+            }
+
+            .footer-text {
+                font-size: 10px;
+                letter-spacing: 2px;
+                padding-left: 820px;
+                padding-top: 15px;
+            }
+
+            .box {
+                height: 500px;
+                width: 100%;
+                background-color: tomato;
+            }
         }
-
-
-
 
 
         @media (max-width: 575.98px) {
@@ -646,7 +1045,7 @@
             }
 
             p {
-                font-size: 11pt;
+                font-size: 10pt;
                 letter-spacing: 2pt;
                 line-height: 23px;
 
@@ -812,6 +1211,7 @@
                 width: 85%;
                 margin-left: 0;
                 overflow: hidden;
+
             }
 
             .history-img img {
@@ -841,18 +1241,25 @@
                 top: -20px;
             }
 
+            .art-ch {
+                padding-top: 5px;
+            }
+
             /* 跑字 */
             .font-Carousel-text {
                 height: 150px;
-                width: 100%;
+                margin-bottom: 0px;
+                padding-bottom: 250px;
                 overflow: hidden;
+                position: relative;
 
             }
 
             .font-Carousel {
-
+                position: absolute;
                 font-family: 'Shippori Mincho B1', serif;
                 font-size: 100px;
+                left: -340px;
                 white-space: nowrap
             }
 
@@ -873,13 +1280,13 @@
                 width: 85%;
                 margin-right: 0;
                 margin-left: auto;
-
+                overflow: hidden;
             }
 
             .stone-img img {
                 width: 100%;
                 height: auto;
-
+                transition: .3s;
             }
 
             .stone-img-font {
@@ -887,7 +1294,7 @@
                 left: 10%;
                 bottom: 18%;
                 width: 80%;
-
+                transition: .3s;
 
             }
 
@@ -907,13 +1314,13 @@
             .wood-img {
                 width: 85%;
                 margin-left: 0;
-
+                overflow: hidden;
             }
 
             .wood-img img {
                 width: 100%;
                 height: auto;
-
+                transition: .3s;
             }
 
             .wood-img-font {
@@ -921,7 +1328,7 @@
                 left: 15%;
                 bottom: 12%;
                 width: 80%;
-
+                transition: .3s;
 
             }
 
@@ -935,6 +1342,10 @@
 
                 position: absolute;
                 top: -20px;
+            }
+
+            .idea-ch {
+                padding-top: 5px;
             }
 
             /* 三芝神獸 */
@@ -979,8 +1390,9 @@
             .color-box {
                 width: 100%;
                 padding-top: 50px;
-                margin: 0 15px;
+                padding-left: 15px;
                 padding-bottom: 50px;
+                padding-right: 15px;
 
             }
 
@@ -1052,21 +1464,22 @@
                 width: 85%;
                 margin-right: 0;
                 margin-left: auto;
+                overflow: hidden;
 
             }
 
             .cover-img img {
                 width: 100%;
                 height: auto;
-
+                transition: .3s;
             }
 
             .cover-img-font {
                 position: absolute;
                 left: 10%;
-                bottom: 18%;
+                bottom: 13%;
                 width: 80%;
-
+                transition: .3s;
 
             }
 
@@ -1086,12 +1499,14 @@
             .content-img {
                 width: 85%;
                 margin-left: 0;
+                overflow: hidden;
 
             }
 
             .content-img img {
                 width: 100%;
                 height: auto;
+                transition: .3s;
 
             }
 
@@ -1100,6 +1515,7 @@
                 left: 15%;
                 bottom: 12%;
                 width: 80%;
+                transition: .3s;
 
 
             }
@@ -1135,12 +1551,14 @@
                 width: 85%;
                 margin-right: 0;
                 margin-left: auto;
+                overflow: hidden;
 
             }
 
             .material-img img {
                 width: 100%;
                 height: auto;
+                transition: .3s;
 
             }
 
@@ -1149,23 +1567,330 @@
                 left: 10%;
                 bottom: 10%;
                 width: 80%;
-
+                transition: .3s;
 
             }
 
             /* 3d圖 */
-            .material-3d-fount {
+            .material-3d {
+                display: none
+            }
+
+            /* dm 對折的*/
+            .Direct-Mail-fount {
+                margin-left: 10px;
+                padding-bottom: 10px;
+            }
+
+            .Direct-Mail-dragon-box-img {
+                width: 180px;
+                padding-bottom: 50px;
+                margin: 0 auto;
+
+            }
+
+            .Direct-Mail-lion-box-img {
+                width: 180px;
+                padding-bottom: 50px;
+                margin: 0 auto;
+            }
+
+            .Direct-Mail-bird-box-img {
+                width: 180px;
+                padding-bottom: 50px;
+                margin: 0 auto;
+            }
+
+            .Direct-Mail img {
+                width: 100%;
+
+
+            }
+
+            /* dm 展開 */
+            .Direct-Mail-big {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            .Direct-Mail-big-yellow {
+                display: flex;
+                width: 180px;
+                position: absolute;
+                left: 10px;
+                top: -1130px;
+                visibility: hidden;
+
+            }
+
+            .Direct-Mail-big img {
+                width: 100%;
+                margin-left: 5px;
+
+            }
+
+            .Direct-Mail-big-red {
+                display: flex;
+                width: 180px;
+                position: absolute;
+                left: 10px;
+                top: -740px;
+                visibility: hidden;
+
+
+            }
+
+            .Direct-Mail-big-blue {
+                display: flex;
+                width: 180px;
+                position: absolute;
+                left: 10px;
+                top: -340px;
+                visibility: hidden;
+
+            }
+
+            .back-box {
+                display: none;
+            }
+
+            /* 海報 */
+            .poster {
+                width: 100%;
+                height: auto;
+                position: relative;
+                padding-bottom: 70px;
+            }
+
+            .poster img {
+                width: 100%;
+            }
+
+            .poster-yellow-box {
+                width: 250px;
+                height: auto;
+                position: relative;
+                margin: 0 auto;
+                padding-bottom: 50px;
+                padding-top: 50px;
+            }
+
+            .poster-yellow-top {
+                opacity: 0;
+                position: absolute;
+
+                z-index: 10;
+                transition: 1s;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+
+            .poster-yellow-down {
+                z-index: 1;
+
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+            .poster-red-box {
+                width: 250px;
+                height: auto;
+                padding-bottom: 50px;
+
+                margin: 0 auto;
+                position: relative;
+            }
+
+            .poster-red-top {
+                position: absolute;
+
+                z-index: 10;
+                opacity: 0;
+                transition: 1s;
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            .poster-red-down {
+                z-index: 1;
+
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+
+
+            .poster-blue-box {
+                width: 250px;
+                height: auto;
+                position: relative;
+                margin: 0 auto;
+                padding-bottom: 50px;
+
+
+            }
+
+            .poster-blue-top {
+                opacity: 0;
+                position: absolute;
+                z-index: 10;
+                transition: 1s;
+                border: 1px solid rgb(133, 133, 133);
+
+
+            }
+
+            .poster-blue-down {
+                z-index: 1;
+
+                border: 1px solid rgb(133, 133, 133);
+            }
+
+            /* 籤詩 */
+            .fortune-sticks {
+                width: 100%;
+
+                padding-bottom: 100px;
+            }
+
+            .card-box {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+
+            .cardbox {
+                width: 130px;
+                height: 396px;
+
+                border: 1px solid rgb(133, 133, 133);
+                transition: .3s;
+                margin: 0 auto;
+
+            }
+
+            .box1-1 {
+                background-image: url('./XD/1x/card-1.png');
+                background-size: cover;
+                margin-right: 30px;
+                margin-bottom: 40px;
+
+            }
+
+            .box1-2 {
+                background-image: url('./XD/1x/card-1.png');
+                background-size: cover;
+            }
+
+            .box2-1 {
+                background-image: url('./XD/1x/card-2.png');
+                background-size: cover;
+                margin-right: 30px;
+                margin-bottom: 40px;
+            }
+
+            .box2-2 {
+                background-image: url('./XD/1x/card-2.png');
+                background-size: cover;
+            }
+
+            .box3-1 {
+                background-image: url('./XD/1x/card-3.png');
+                background-size: cover;
+                margin-right: 30px;
+            }
+
+            .box3-2 {
+                background-image: url('./XD/1x/card-3.png');
+                background-size: cover;
+            }
+
+            /* 聯絡我們 */
+            .call-me-box {
+                width: 100%;
+
+
+                padding: 30px 20px 30px 20px;
+            }
+
+            .winner-image-box img {
+                width: 150px;
+
+
+            }
+
+
+
+            .winner-image-box {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 30px;
+            }
+
+            .call-me-qrcode-box {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .icon {
+                padding-left: 15px;
                 padding-bottom: 20px;
             }
 
-            .material-3d {
+            .ig-qrcode {
+                width: 100px;
+            }
+
+            .fb-qrcode {
+                width: 100px;
+            }
+
+            .tw-qrcode {
+                width: 100px;
+            }
+
+
+
+
+            /* 最後 */
+
+            .footer {
+                width: 100%;
+                height: 400px;
+                background-color: rgba(255, 255, 255, 0.137);
+
+            }
+
+            .footer-box {
+                padding-left: 80px;
+                padding-top: 20px;
                 width: 100%;
 
             }
 
-            .material-3d img {
-                width: 100%;
-                height: 100%;
+            .footer-box img {
+                object-fit: none;
+            }
+
+            .footer-2 {
+                padding-top: 30px;
+            }
+
+            .footer-3 {
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            .footer-text {
+                font-size: 10px;
+                letter-spacing: 2px;
+                padding-left: 70px;
+                padding-top: 5px;
+
+
             }
         }
     </style>
@@ -1174,37 +1899,38 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-expand-sm  navbar-dark fixed-top" style="color: #ffffff;">
-        <div class="navbar-brand" href="#"><img src="./XD/logo.png" alt=""></div>
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-brand" href="#home"><img src="./XD/logo.png" alt=""></div>
+        <button class="navbar-toggler " type="button" style="outline: none;" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link nav-linksm" style="color: #ffffff;" href="#">
+                    <a class="nav-link nav-linksm" style="color: #ffffff;" href="#zeor">
                         三峽祖師廟
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #ffffff;" href="#">藝術文化</a>
+                    <a class="nav-link" style="color: #ffffff;" href="#one">藝術文化</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #ffffff;" href="#">設計發想</a>
+                    <a class="nav-link" style="color: #ffffff;" href="#two">設計發想</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #ffffff;" href="#">作品圖</a>
+                    <a class="nav-link" style="color: #ffffff;" href="#three">作品圖</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #ffffff;" href="#">聯絡我們</a>
+                    <a class="nav-link" style="color: #ffffff;" href="#four">聯絡我們</a>
                 </li>
             </ul>
 
         </div>
     </nav>
 
-    <div class="home-page ">
+    <div id="home" class="home-page ">
         <img class="big-imge" src="./XD/index-big-img.png"></img>
         <img class="dragon" src="./XD/1x/dragon.png"></img>
         <img class="bird" src="./XD/bird-tern.png"></img>
@@ -1216,12 +1942,13 @@
         <img class="dragon" src="./XD/1x/dragon.png"></img>
         <img class="bird" src="./XD/bird-tern.png"></img>
     </div>
-
+    <div class="box">
+    </div>
     <div class="about-box">
         <div class="container">
             <div class="row">
                 <div class="about-font col-12">
-                    <div class="about-en f4">Contents NO.01</div>
+                    <div id="zeor" class="about-en f4">Contents NO.01</div>
                     <div class="about-ch f1">祖師廟介紹</div>
                 </div>
             </div>
@@ -1261,7 +1988,7 @@
         <div class="container">
             <div class="row">
                 <div class="art-font col-12">
-                    <div class="art-en f4">Contents NO.02</div>
+                    <div id="one" class="art-en f4">Contents NO.02</div>
                     <div class="art-ch f1">祖師廟藝術文化</div>
                     <div class="art-ch f3">1947年第三次重建，由畫家李梅樹教授督造</div>
                     <p class="art-ch">
@@ -1308,7 +2035,7 @@
         <div class="container">
             <div class="row">
                 <div class="idea-font col-12">
-                    <div class="idea-en f4">Contents NO.03</div>
+                    <div id="two" class="idea-en f4">Contents NO.03</div>
                     <div class="idea-ch f1">設計發想</div>
                     <p class="idea-ch">
                         全廟以上木下石的雕刻建造,主要分為天花板的木雕、柱體的石雕以及牆面上的銅雕三大類,我們從這三類的雕刻分別挑選出象徵吉祥的獅子、龍以及鳳凰作為主要形象視覺,以雕刻圖騰作為輔助圖形,並將此視覺延伸至各項應用物。
@@ -1373,7 +2100,7 @@
         <div class="container">
             <div class="row">
                 <div class="works-font col-12">
-                    <div class="works-en f4">Contents NO.04</div>
+                    <div id="three" class="works-en f4">Contents NO.04</div>
                     <div class="works-ch f1">設計作品</div>
                 </div>
             </div>
@@ -1425,10 +2152,149 @@
         <!-- 3d圖 -->
         <div class="material-3d">
             <div class="material-3d-fount f2">材質3D圖</div>
-            <div class="material-3d"><img src="./XD/dragon-3d.png"></div>
+            <div class="material-3d">
+                <div class="material-box"></div>
+                <div class='modelo-wrapper-pc'>
+                    <div class='modelo-wrapper'>
+                        <div style="width: 80%; padding-bottom: 56.25%;margin: 0 auto;position: relative">
+                            <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe
+                                    src="https://app.modeloapp.com/embedded/1370802628941373440?viewport=false&autoplay=true&autoRotate=true&hideTools=true&showBIM=false&showBBoxSize=false&showKooRender=false&c_at0=79.99995315478289&c_at1=148.49994552538791&c_at2=3.3499497728616863&c_theta=5.630087143782136&c_phi=0.5444329251994324&c_dis=254.68755765073524"
+                                    style="width:100%;height:80%;border: 1px solid rgb(97, 97, 97); " frameborder="0"
+                                    mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe> </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- dm -->
+        <div class="Direct-Mail-BOX">
+            <div class="Direct-Mail-fount f2">DM設計</div>
+
+            <div class="Direct-Mail">
+                <div class="Direct-Mail-dragon-box-img">
+                    <div class="Direct-Mail-dragon-box">
+                        <img src="./XD/Direct-Mail-yellow.png">
+                        <p class="dn-text">日文</p>
+                    </div>
+                </div>
+                <div class="Direct-Mail-lion-box-img">
+                    <div class="Direct-Mail-lion-box">
+                        <img src="./XD/Direct-Mail-red.png">
+                        <p class="dn-text">中文</p>
+                    </div>
+                </div>
+                <div class="Direct-Mail-bird-box-img">
+                    <div class="Direct-Mail-bird-box">
+                        <img src="./XD/Direct-Mail-blue.png">
+                        <p class="dn-text">英文</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="Direct-Mail-big">
+                <div class="Direct-Mail-big-yellow">
+                    <img src="./XD/1x/dm-big-yellow-first.png">
+                    <img src="./XD/1x/dm-big-yellow-back.png">
+                </div>
+                <div class="Direct-Mail-big-red">
+                    <img src="./XD/1x/dm-big-red-first.png">
+                    <img src="./XD/1x/dm-big-red-back.png">
+                </div>
+                <div class="Direct-Mail-big-blue">
+                    <img src="./XD/1x/dm-big-blue-first.png">
+                    <img src="./XD/1x/dm-big-blue-back.png">
+                </div>
+                <div class="back-box">
+                    <H3 class="back-fount">X</H3>
+                </div>
+            </div>
+        </div>
+
+        <!-- 海報 -->
+        <div class="poster">
+            <div class="Direct-Mail-fount f2">形象海報設計 <p class="poster-text">請點海報</p>
+            </div>
+
+            <div class="poster-yellow-box">
+                <img class="poster-yellow-top" src="./XD/1x/poster-dragon.png">
+                <img class="poster-yellow-down" src="./XD/poster-yellow-down.png">
+            </div>
+            <div class="poster-red-box">
+
+
+                <img class="poster-red-top" src="./XD/1x/poster-lion.png">
+                <img class="poster-red-down" src="./XD/poster-red-down.png">
+
+            </div>
+            <div class="poster-blue-box">
+                <img class="poster-blue-top" src="./XD/1x/poster-bird.png">
+                <img class="poster-blue-down" src="./XD/poster-blue-down.png">
+            </div>
+        </div>
+
+        <!-- 籤詩 -->
+        <div class="fortune-sticks">
+            <div class="Direct-Mail-fount f2">籤詩<p class="poster-text">點選詩籤可翻面</p>
+            </div>
+            <div class="card-box">
+                <div class="cardbox box1-1">
+
+                </div>
+                <div class="cardbox box1-2"></div>
+                <div class="cardbox box2-1"></div>
+                <div class="cardbox box2-2"></div>
+                <div class="cardbox box3-1"></div>
+                <div class="cardbox box3-2"></div>
+            </div>
+
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="call-me-font col-12">
+                <div id="four" class="call-me-en f4">Contents NO.05</div>
+                <div class="call-me-ch f1">得獎、聯絡我們</div>
+            </div>
+        </div>
     </div>
+    <div class="call-me-box">
+        <div class="winner-image-box">
+            <img class="redbot-image" src="./XD/redbot.jpeg">
+            <img class="pin-image" src="./XD/pin.jpg">
+        </div>
+        <div class="call-me-qrcode-box">
+            <div class="fb">
+                <a href="https://www.facebook.com/sanshiazushitemple/"><img class="icon fb-icon"
+                        src="./XD/1x/fb.png"></a>
+                <img class="fb-qrcode" src="./XD/1x/fb-qrcode.png">
+            </div>
+            <div class="ig">
+                <a href="https://instagram.com/san_shia_zu_shi_temple?igshid=1vs4vi0fl52mk"><img class="icon ig-icon"
+                        src="./XD/1x/ig.png"></a>
+                <img class="ig-qrcode" src="./XD/1x/ig-qrcode.png">
+            </div>
+            <div class="tw">
+                <img class="icon tw-icon" src="./XD/1x/tw.png">
+                <img class="tw-qrcode" src="./XD/1x/fb-qrcode.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-box">
+            <img class="footer-1" src="./XD/1x/footer-1.png">
+            <img class="footer-2" src="./XD/1x/footer-2.png">
+            <img class="footer-3" src="./XD/1x/footer-3.png">
+        </div>
+        <p class="footer-text">© SAN SHIA ZU SHI TEMPLE 所有</p>
+    </div>
+
+
+
 
 
 
@@ -1446,6 +2312,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
+
+
         if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             $.getScript("./test-window.js");
 
@@ -1454,6 +2322,38 @@
             $.getScript("./test-mobile.js");
         }
 
+
+
+        let scrollLast = 0
+        $(window).scroll(function () {
+
+
+
+
+            console.log('scoll top', $(this).scrollTop());
+            let scrollNow = $(this).scrollTop();
+
+
+            if (100 <= scrollNow && scrollNow < 1800) {
+                console.log('觸發');
+                $('.dragon').css('opacity', '+=0.01')
+
+                $('.home-page').css('position', 'fixed').css('transition', '5s')
+
+            }
+            else {
+                $('.home-page').css('position', 'static')
+            }
+
+
+
+
+
+            scrollLast = scrollNow;
+
+
+
+        })
 
 
     </script>
