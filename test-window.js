@@ -101,7 +101,7 @@ $(window).scroll(function () {
 
 
     //圖片放大-木頭
-    if (4627 <= scrollNow && scrollNow <= 5627) {
+    if (535 <= scrollNow && scrollNow <= 6435) {
 
         if (scrollLast < scrollNow) {
             // 往下
@@ -445,4 +445,4 @@ $('.box3-2').click(function () {
     }
 })
 
-
+$("#page1").load("./page1.html");

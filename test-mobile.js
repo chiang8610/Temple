@@ -116,7 +116,7 @@ $(window).scroll(function () {
 
 
     // //圖片放大-封面
-    if (5000 <= scrollNow && scrollNow <= 5481) {
+    if (5000 <= scrollNow && scrollNow <= 5760) {
 
         if (scrollLast < scrollNow) {
             // 往下
@@ -134,7 +134,7 @@ $(window).scroll(function () {
     }
 
     // //圖片放大-內頁
-    if (5700 <= scrollNow && scrollNow <= 6041) {
+    if (5700 <= scrollNow && scrollNow <= 6141) {
 
         if (scrollLast < scrollNow) {
             // 往下

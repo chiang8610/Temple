@@ -166,6 +166,7 @@
             .introduction-img-box {
                 position: relative;
 
+
             }
 
             .introduction-img {
@@ -174,6 +175,9 @@
                 margin-left: auto;
                 overflow: hidden;
 
+
+
+
             }
 
             .introduction-img img {
@@ -181,6 +185,7 @@
                 height: auto;
                 transition: .3s;
                 object-fit: cover;
+                transform: scale(1.1);
             }
 
             .introduction-img-font {
@@ -220,6 +225,7 @@
                 transition: .3s;
                 object-fit: cover;
 
+
             }
 
             .history-img-font {
@@ -233,7 +239,7 @@
 
             /* NO.2 */
             .art-font {
-                padding-top: 200px;
+                padding-top: 300px;
                 position: relative;
                 padding-bottom: 60px;
             }
@@ -308,6 +314,7 @@
                 height: auto;
                 transition: .3s;
                 object-fit: cover;
+                transform: scale(1.1);
             }
 
             .stone-img-font {
@@ -382,7 +389,7 @@
                 height: 768px;
                 top: 0;
 
-                ;
+
             }
 
             .dragon-box img {
@@ -527,6 +534,7 @@
                 height: auto;
                 transition: .3s;
                 object-fit: cover;
+                transform: scale(1.1);
 
             }
 
@@ -578,13 +586,14 @@
                 height: auto;
             }
 
-            .line-picture {
-                width: 100%;
+
+
+            .page-box {
+                width: 1500px;
+                margin: 0 auto;
             }
 
-            .line-picture img {
-                width: 100%;
-            }
+
 
             /* 特殊材質 */
             .about-material {
@@ -610,6 +619,7 @@
                 height: auto;
                 transition: .3s;
                 object-fit: cover;
+                transform: scale(1.1);
 
             }
 
@@ -1173,6 +1183,7 @@
                 width: 100%;
                 height: auto;
                 transition: .3s;
+                transform: scale(1.1);
 
             }
 
@@ -1219,22 +1230,25 @@
                 width: 80%;
                 transition: .3s;
 
+
+
             }
 
             /* NO.2 */
             .art-font {
-                padding-bottom: 60PX;
+                padding-bottom: 100PX;
                 position: relative;
+                padding-top: 100px;
             }
 
             .art-en {
 
                 position: absolute;
-                top: -20px;
+                top: 80px;
             }
 
             .art-ch {
-                padding-top: 5px;
+                padding-top: 10px;
             }
 
             /* 跑字 */
@@ -1279,6 +1293,7 @@
                 width: 100%;
                 height: auto;
                 transition: .3s;
+                transform: scale(1.1);
             }
 
             .stone-img-font {
@@ -1464,6 +1479,7 @@
                 width: 100%;
                 height: auto;
                 transition: .3s;
+                transform: scale(1.1);
             }
 
             .cover-img-font {
@@ -1515,15 +1531,16 @@
             /* 內頁線搞 */
             .line-picture-fount {
                 padding-bottom: 20px;
+
+                display: none;
             }
 
-            .line-picture {
-                width: 100%;
-            }
 
-            .line-picture img {
-                width: 100%;
-            }
+
+
+
+
+
 
             /* 特殊材質 */
             .about-material {
@@ -1551,7 +1568,7 @@
                 width: 100%;
                 height: auto;
                 transition: .3s;
-
+                transform: scale(1.1);
             }
 
             .material-img-font {
@@ -1805,7 +1822,7 @@
                 width: 100%;
 
 
-                padding: 30px 20px 30px 20px;
+                padding: 30px 20px 50px 20px;
             }
 
             .winner-image-box img {
@@ -1819,7 +1836,7 @@
             .winner-image-box {
                 display: flex;
                 justify-content: space-between;
-                padding-bottom: 30px;
+                padding-bottom: 50px;
             }
 
             .call-me-qrcode-box {
@@ -1857,7 +1874,7 @@
             }
 
             .footer-box {
-                padding-left: 80px;
+                padding-left: 70px;
                 padding-top: 20px;
                 width: 100%;
 
@@ -2125,7 +2142,9 @@
         <!-- 線搞 -->
         <div class="line">
             <div class="line-picture-fount f2">內頁雕刻線稿</div>
-            <div class="line-picture"><img src="./XD/1x/line.png"></div>
+            <div class="page-box">
+                <div id="page1"></div>
+            </div>
         </div>
         <div class="about-material">
             <div class="material-img-box">
@@ -2268,7 +2287,7 @@
                 <img class="ig-qrcode" src="./XD/1x/ig-qrcode.png">
             </div>
             <div class="tw">
-                <img class="icon tw-icon" src="./XD/1x/tw.png">
+                <a href="https://twitter.com/?lang=zh-tw"><img class="icon tw-icon" src="./XD/1x/tw.png"></a>
                 <img class="tw-qrcode" src="./XD/1x/fb-qrcode.png">
             </div>
         </div>
