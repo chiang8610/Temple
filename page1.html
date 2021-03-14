@@ -18,10 +18,35 @@
     <style>
         /* 內頁雕刻線搞 */
 
-
-
-        .line-picture img {
+        img {
             width: 100%;
+        }
+
+
+
+        .box {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        .box-1 {
+            width: 100%;
+            position: absolute;
+            z-index: 99;
+            transition: 1s;
+
+        }
+
+        .box-2 {
+            width: 100%;
+            /* visibility: hidden; */
+            position: absolute;
+            transition: 1s;
+            opacity: 0;
+            z-index: 1;
+
 
         }
     </style>
@@ -29,28 +54,33 @@
 
 <body>
 
+    <div class="box">
+        <div class="box-1">
+            <div class="Phoenix-line"><img class="zoom" src="./XD/1x/Phoenix-line.png" class="data-big"
+                    src="./XD/1x/Phoenix-line-big.png"></div>
+        </div>
+        <div class="box-2">
+            <div class="Phoenix-line"><img class="zoom" src="./XD/1x/Phoenix-lime+img.png" class="data-big"
+                    src="./XD/1x/Phoenix-lime+img.png"></div>
+        </div>
 
-    <div class="Phoenix-line"><img class="zoom" src="./XD/1x/Phoenix-line.png" class="data-big"
-            src="./XD/1x/Phoenix-line-big.png"></div>
-
+    </div>
 
 
 
     <!--mlens 設定-->
     <script>
 
-        let xxx = 0
-        $('.btn').click(function () {
-            xxx++;
-
-            if ((xxx % 2) == 0) {
-                $('.Phoenix-lime-img').css('opacity', '0')
-            } else {
-                $('.Phoenix-lime-img').css('opacity', '1')
-
-
-            }
+        $('.box-1').click(function () {
+            $('.box-2').css('opacity', '1').css('z-index', '99')
+            $('.box-1').css('opacity', '0').css('z-index', '1')
         })
+
+        $('.box-2').click(function () {
+            $('.box-1').css('opacity', '1').css('z-index', '99')
+            $('.box-2').css('opacity', '0').css('z-index', '1')
+        })
+
 
         //<![CDATA[
         $(".zoom").each(function () {
@@ -67,7 +97,7 @@
                 responsive: true // 圖片是否自適應
             });
         }).parent().css("position", "relative");
-    //]]>
+//]]>
     </script>
 </body>
 

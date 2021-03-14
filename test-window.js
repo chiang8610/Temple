@@ -156,7 +156,7 @@ $(window).scroll(function () {
     }
 
     //圖片放大-材質
-    if (12027 <= scrollNow && scrollNow <= 13027) {
+    if (12410 <= scrollNow && scrollNow <= 13310) {
 
         if (scrollLast < scrollNow) {
             // 往下
