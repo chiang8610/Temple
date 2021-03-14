@@ -101,19 +101,19 @@ $(window).scroll(function () {
 
 
     //圖片放大-木頭
-    if (535 <= scrollNow && scrollNow <= 6435) {
+    if (535 <= scrollNow && scrollNow <= 6235) {
 
         if (scrollLast < scrollNow) {
             // 往下
             console.log('往下+=20');
             $('.wood-img').find('img').css('width', '+=20')
-            $('.wood-img-font').css('bottom', '+=15')
+            // $('.wood-img-font').css('bottom', '+=15')
         }
         else {
             // 往上
             console.log('往上-=20');
             $('.wood-img').find('img').css('width', '-=10')
-            $('.wood-img-font').css('bottom', '-=15')
+            // $('.wood-img-font').css('bottom', '-=15')
         }
 
     }
@@ -138,7 +138,7 @@ $(window).scroll(function () {
     }
 
     //圖片放大-內頁
-    if (9700 <= scrollNow && scrollNow <= 10427) {
+    if (9700 <= scrollNow && scrollNow <= 10956) {
 
         if (scrollLast < scrollNow) {
             // 往下
