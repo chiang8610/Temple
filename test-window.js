@@ -176,7 +176,7 @@ $(window).scroll(function () {
 
 
     // 龍
-    if (7374 <= scrollNow && scrollNow <= 7600) {
+    if (7574 <= scrollNow && scrollNow <= 7750) {
         if (scrollLast < scrollNow) {
             // 往下
             // 龍
